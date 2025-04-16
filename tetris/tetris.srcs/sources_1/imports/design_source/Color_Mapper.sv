@@ -14,10 +14,9 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+module  color_mapper ( input  logic [9:0] DrawX, DrawY, input logic [3:0] state,
                        output logic [3:0]  Red, Green, Blue );
     
-    logic ball_on;
 	 
  /* Old Ball: Generated square box by checking if the current pixel is within a square of length
     2*BallS, centered at (BallX, BallY).  Note that this requires unsigned comparisons.
@@ -33,25 +32,71 @@ module  color_mapper ( input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
      of the 120 available multipliers on the chip!  Since the multiplicants are required to be signed,
 	  we have to first cast them from logic to int (signed by default) before they are multiplied). */
 	  
-    int DistX, DistY, Size;
-    assign DistX = DrawX - BallX;
-    assign DistY = DrawY - BallY;
-    assign Size = Ball_size;
   
+
+    
+    
     always_comb
-    begin:Ball_on_proc
-        if ( (DistX*DistX + DistY*DistY) <= (Size * Size) )
-            ball_on = 1'b1;
-        else 
-            ball_on = 1'b0;
-     end 
-       
+    begin
+        
+    end
     always_comb
     begin:RGB_Display
-        if ((ball_on == 1'b1)) begin 
-            Red = 4'hf;
-            Green = 4'h7;
-            Blue = 4'h0;
+        if (((DrawX<10'd160) && (DrawY<10'd320))) begin 
+             case (state[2:0] )
+             3'b000:
+                begin
+                Red = 4'h0;
+                Green = 4'h0;
+                Blue = 4'h0;
+                end
+              3'b001:
+                begin
+                Red = 4'h5;
+                Green = 4'hf;
+                Blue = 4'hf;
+                end
+              3'b010:
+                begin
+                Red = 4'h0;
+                Green = 4'h0;
+                Blue = 4'hf;
+                end
+              3'b011:
+                begin
+                Red = 4'hf;
+                Green = 4'h5;
+                Blue = 4'h0;
+                end
+              3'b100:
+                begin
+                Red = 4'hf;
+                Green = 4'hf;
+                Blue = 4'h5;
+                end
+              3'b101:
+                begin
+                Red = 4'h0;
+                Green = 4'hf;
+                Blue = 4'h0;
+                end
+              3'b110:
+                begin
+                Red = 4'h5;
+                Green = 4'h0;
+                Blue = 4'h5;
+                end
+              3'b111:
+                begin
+                Red = 4'hf;
+                Green = 4'h0;
+                Blue = 4'h0;
+                end
+              
+//            Red = 4'hf;
+//            Green = 4'h7;
+//            Blue = 4'h0;
+              endcase
         end       
         else begin 
             Red = 4'hf - DrawX[9:6]; 

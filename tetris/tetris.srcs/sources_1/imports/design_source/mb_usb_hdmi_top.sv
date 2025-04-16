@@ -11,7 +11,10 @@
 //-------------------------------------------------------------------------
 
 
-module mb_usb_hdmi_top(
+module mb_usb_hdmi_top # (
+    parameter integer C_S_AXI_DATA_WIDTH	= 4
+)
+(
     input logic Clk,
     input logic reset_rtl_0,
     
@@ -51,6 +54,27 @@ module mb_usb_hdmi_top(
     
     assign reset_ah = reset_rtl_0;
     
+    
+    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
+    
+    assign game_states[0] = 4'h0;
+    assign game_states[1] = 4'd1;
+    assign game_states[2] = 4'd2;
+    assign game_states[3] = 4'd3;
+    assign game_states[4] = 4'd4;
+    assign game_states[5] = 4'd5;
+    assign game_states[6] = 4'd6;
+    assign game_states[7] = 4'd7;
+    assign game_states[20] = 4'd4;
+    assign game_states[120] = 4'd6;
+    assign game_states[79] = 4'd7;
+    
+    
+    logic [7:0] game_address;
+    always_comb
+    begin
+        game_address = (drawX>>>4) + 10 *  (drawY>>>4);
+    end
     
     //Keycode HEX drivers
     hex_driver HexA (
@@ -135,22 +159,17 @@ module mb_usb_hdmi_top(
 
     
     //Ball Module
-    ball ball_instance(
-        .Reset(reset_ah),
-        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
-        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
-        .BallX(ballxsig),
-        .BallY(ballysig),
-        .BallS(ballsizesig)
-    );
+//    ball ball_instance(
+//        .Reset(reset_ah),
+//        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
+//        .keycode(keycode0_gpio[7:0])    //Notice: only one keycode connected to ball by default
+//    );
     
     //Color Mapper Module   
     color_mapper color_instance(
-        .BallX(ballxsig),
-        .BallY(ballysig),
         .DrawX(drawX),
         .DrawY(drawY),
-        .Ball_size(ballsizesig),
+        .state(game_states[game_address]),
         .Red(red),
         .Green(green),
         .Blue(blue)

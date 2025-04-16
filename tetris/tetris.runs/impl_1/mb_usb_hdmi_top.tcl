@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/johna/ece-385/lab_6_2/lab_6_2.runs/impl_1/mb_usb_hdmi_top.tcl"
+  variable script "C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/impl_1/mb_usb_hdmi_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,7 +125,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
   open_checkpoint mb_usb_hdmi_top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/johna/ece-385/lab_6_2/lab_6_2.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/johna/Tetris-FPGA/tetris/tetris.cache/wt [current_project]
 set_property TOP mb_usb_hdmi_top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

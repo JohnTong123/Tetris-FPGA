@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/johna/ece-385/lab_6_2/lab_6_2.runs/impl_1'
+HD_PWD='C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
