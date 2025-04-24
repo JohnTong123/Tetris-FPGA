@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1744776321" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ml_block_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1745408218" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ml_block_wrapper.dcp">
   <File Type="PA-TCL" Name="mb_usb_hdmi_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mb_usb_hdmi_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mb_usb_hdmi_top_reports.tcl"/>
@@ -23,15 +23,6 @@
     <File Path="$PSRCDIR/sources_1/imports/design_source/VGA_controller.sv">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/lab6_2_provided/design_source/VGA_controller.sv"/>
-        <Attr Name="ImportTime" Val="1743048286"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/design_source/ball.sv">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/lab6_2_provided/design_source/ball.sv"/>
         <Attr Name="ImportTime" Val="1743048286"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -99,6 +90,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../ece-385/lab_6_2/lab_6_2.gen/sources_1/bd/ml_block/hdl/ml_block_wrapper.v"/>
         <Attr Name="ImportTime" Val="1743049528"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_states.sv">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

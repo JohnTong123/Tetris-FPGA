@@ -53,34 +53,49 @@ module mb_usb_hdmi_top # (
     logic reset_ah;
     
     assign reset_ah = reset_rtl_0;
+    logic [3:0] dout;
+    logic [25:0] counter;
+    logic [3:0] gs;
+    logic [7:0] oof;
+    game_states game 
+    (
+        .game_clk(clk_25MHz),
+        .clk(clk_25MHz),
+        .DrawX(drawX),
+        .DrawY(drawY),
+        .keycode(keycode0_gpio),
+        .reset(reset_ah),
+        .data_out(dout),
+        .counter(counter),
+        .gs(gs),
+        .debug(oof)
+        );
+//    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
+    
+//    assign game_states[0] = 4'h0;
+//    assign game_states[1] = 4'd1;
+///    assign game_states[2] = 4'd2;
+//    assign game_states[3] = 4'd3;
+//    assign game_states[4] = 4'd4;
+//    assign game_states[5] = 4'd5;
+//    assign game_states[6] = 4'd6;
+//    assign game_states[7] = 4'd7;
+//    assign game_states[20] = 4'd4;
+//    assign game_states[120] = 4'd6;
+//    assign game_states[79] = 4'd7;
     
     
-    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
-    
-    assign game_states[0] = 4'h0;
-    assign game_states[1] = 4'd1;
-    assign game_states[2] = 4'd2;
-    assign game_states[3] = 4'd3;
-    assign game_states[4] = 4'd4;
-    assign game_states[5] = 4'd5;
-    assign game_states[6] = 4'd6;
-    assign game_states[7] = 4'd7;
-    assign game_states[20] = 4'd4;
-    assign game_states[120] = 4'd6;
-    assign game_states[79] = 4'd7;
-    
-    
-    logic [7:0] game_address;
-    always_comb
-    begin
-        game_address = (drawX>>>4) + 10 *  (drawY>>>4);
-    end
+//    logic [7:0] game_address;
+//    always_comb
+//    begin
+//        game_address = (drawX>>>4) + 10 *  (drawY>>>4);
+//    end
     
     //Keycode HEX drivers
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
+        .in({gs, data_out, oof[3:0], counter[19:16]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -88,7 +103,7 @@ module mb_usb_hdmi_top # (
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
+        .in({counter[15:12], counter[11:8], counter[7:4], counter[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
@@ -169,7 +184,7 @@ module mb_usb_hdmi_top # (
     color_mapper color_instance(
         .DrawX(drawX),
         .DrawY(drawY),
-        .state(game_states[game_address]),
+        .state(dout),
         .Red(red),
         .Green(green),
         .Blue(blue)

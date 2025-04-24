@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -84,15 +87,16 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths c:/Users/johna/ece-385/lab_6_2/RD_hdmi_ip2020 [current_project]
 update_ip_catalog
+set_property ip_output_repo c:/Users/johna/Tetris-FPGA/tetris/tetris.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/Color_Mapper.sv
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/VGA_controller.sv
-  C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/ball.sv
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv
+  C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv
 }
 read_verilog -library xil_defaultlib C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/ml_block_wrapper.v
 add_files C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/bd/ml_block/ml_block.bd
@@ -134,7 +138,7 @@ set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-
 set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ip/ml_block_axi_quad_spi_0_0/ml_block_axi_quad_spi_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ip/ml_block_axi_quad_spi_0_0/ml_block_axi_quad_spi_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ip/ml_block_axi_quad_spi_0_0/ml_block_axi_quad_spi_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ml_block_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ml_block_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ip/ml_block_microblaze_0_0/data/mb_bootloop_le.elf]
 
 read_ip -quiet C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
