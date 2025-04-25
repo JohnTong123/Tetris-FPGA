@@ -14,7 +14,7 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input  logic [9:0] DrawX, DrawY, input logic [3:0] state,
+module  color_mapper ( input  logic [9:0] DrawX, DrawY, input logic [2:0] state,
                        output logic [3:0]  Red, Green, Blue );
     
 	 

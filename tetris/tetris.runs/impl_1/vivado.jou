@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Apr 23 06:39:45 2025
-# Process ID: 56924
+# Start of session at: Fri Apr 25 02:45:07 2025
+# Process ID: 31412
 # Current directory: C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/impl_1
 # Command line: vivado.exe -log mb_usb_hdmi_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mb_usb_hdmi_top.tcl -notrace
 # Log file: C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/impl_1/mb_usb_hdmi_top.vdi
