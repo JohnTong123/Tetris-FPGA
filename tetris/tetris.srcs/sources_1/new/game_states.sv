@@ -32,8 +32,9 @@ parameter integer DATA_WIDTH = 3
     input logic reset,
     output logic [DATA_WIDTH-1:0] data_out,
 //    output logic [25:0] counter,
-    output logic [3:0] gs
+    output logic [3:0] gs,
 //    output logic [7:0] debug
+    output int score
     );
 
 logic progress;
@@ -50,6 +51,10 @@ assign gs[0] = spawn;
 logic game_speed;
 logic empty;
 logic [2:0] random_block;
+logic cant_shift;
+
+int Score;
+assign score = Score;
 
 lfsr lfsr(
     .clk(game_speed),
@@ -75,14 +80,22 @@ end
 
 
 logic keypress;
-assign keypress = 0 ;
+logic [13:0] key_count;
+logic [31:0] past_key;
 logic [7:0] center;
+
 logic [2:0] block;
 logic [1:0] rotation;
 
 logic [7:0] coords[4];
 logic [7:0] random_coords[4];
 logic [2:0] r;
+
+
+logic center_left;
+logic center_right;
+logic center_down;
+logic res_center;
 
 rotate_block rotate_block(
         .center(center),
@@ -109,13 +122,18 @@ begin
         end
         empty = 1;
         spawn = 0;
-        center = 3;
+        res_center = 1;
         rotation = 0 ;
         block = 0;
-        
+        cant_shift = 0;
+        center_down = 0;
+        Score = 0;
     end
-    else
+    else 
     begin
+        res_center = 0 ;
+        center_down= 0 ;
+        Score = Score + 1;
         if (game_speed)
         begin
             spawn = 0;
@@ -131,6 +149,7 @@ begin
                     spawn|=1;
                 end
             end
+            
             if (spawn)
             begin
                 for (int i = 0 ; i < 4; i= i+1)
@@ -140,7 +159,8 @@ begin
                         game_states[coords[i]-10] = block;
                     end
                 end
-                center = 3;
+//                center = 3;
+                res_center = 1;
                 rotation = 0 ;
                 
                 block = random_block;
@@ -159,11 +179,12 @@ begin
             else
             begin
         //        gs[2] = empty;
-                center+=10;
+                center_down = 1;
             end
         end
 
     end
+    
 end
 
 always_ff @(posedge game_clk or posedge reset)
@@ -190,9 +211,148 @@ begin
      
 end
     
+always_ff @(posedge game_clk or posedge reset)
+begin
+    if (reset)
+    begin
+        past_key = keycode;
+        key_count = 0 ;
+        keypress = 0 ;
+        center_left = 0 ;
+        center_right = 0 ;
+    end
+    else
+    begin
+        center_left = 0;
+        center_right = 0;
+        if(past_key == keycode && past_key !== 0)
+        begin
+            
+            if (key_count & (1<<13))
+            begin
+                if (keypress == 0)
+                begin
+                    
+                    keypress=1;
+                    cant_shift = 0 ;
+                    if (keycode == 8'h50)
+                    begin
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (coords[i]%10 == 0)
+                            begin
+                                cant_shift = 1;
+                            end
+                            else if (coords[i]>=10)
+                            begin
+                                if (game_states[coords[i]-11] !== 0)
+                                begin
+                                    cant_shift = 1;
+                                end
+                            end
+                        end
+                        if(cant_shift == 0)
+                        begin
+                            center_left=1;
+                        end
+                    end
+                    else if (keycode == 8'h4F)
+                    begin
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (coords[i]%10 == 9)
+                            begin
+                                cant_shift = 1;
+                            end
+                            else if (coords[i]>=10)
+                            begin
+                                if (game_states[coords[i]-9] !== 0)
+                                begin
+                                    cant_shift = 1;
+                                end
+                            end
+                        end
+                        if(cant_shift == 0 )
+                        begin
+                            center_right=1;
+                        end
+                    end
+                end
+            end
+            else
+            begin
+                key_count+=1 ;
+                keypress = 0 ;
+            end
+        end
+        else
+        begin
+            key_count = 0 ;
+            keypress = 0 ;
+        end
+        
+        
+        
+        past_key = keycode;
+    end
     
-
-
-
+end
+logic rc;
+logic cd;
+logic cl;
+logic cr;
+always_ff @(posedge game_clk )
+begin
+    if (res_center)
+    begin
+        if (rc==0)
+        begin
+            center=3;
+            rc = 1;
+        end
+    end
+    else
+    begin
+        rc=0;
+    end
+    
+    if (center_down)
+    begin
+        if ((ct == 10) && (game_speed))
+        begin
+            center+=10;
+            cd=1;
+        end
+    end
+    else
+    begin
+        cd=0;
+    end
+    
+    if (center_left)
+    begin
+        if(cl==0)
+        begin
+            center-=1;
+            cl=1;
+        end
+    end
+    else
+    begin
+        cl=0;
+    end
+    if (center_right)
+    begin
+        if(cr==0)
+        begin
+            cr=1;
+            center+=1;
+        end
+    end
+    else
+    begin
+        cr=0;
+    end
+end
 
 endmodule

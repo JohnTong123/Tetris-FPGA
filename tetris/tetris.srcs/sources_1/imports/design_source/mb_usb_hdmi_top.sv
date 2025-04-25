@@ -52,6 +52,8 @@ module mb_usb_hdmi_top # (
     logic [3:0] red, green, blue;
     logic reset_ah;
     
+    int score;
+    
     assign reset_ah = reset_rtl_0;
     logic [2:0] dout;
 //    logic [25:0] counter;
@@ -67,8 +69,9 @@ module mb_usb_hdmi_top # (
         .reset(reset_ah),
         .data_out(dout),
 //        .counter(counter),
-        .gs(gs)
+        .gs(gs),
 //        .debug(oof)
+        .score(score)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     
@@ -95,7 +98,7 @@ module mb_usb_hdmi_top # (
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({gs,4'd1,0,0}),
+        .in({0,4'd1,0,0}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -185,6 +188,7 @@ module mb_usb_hdmi_top # (
         .DrawX(drawX),
         .DrawY(drawY),
         .state(dout),
+        .score(score),
         .Red(red),
         .Green(green),
         .Blue(blue)

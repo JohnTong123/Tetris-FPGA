@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Apr 25 02:41:13 2025
-# Process ID: 30192
+# Start of session at: Fri Apr 25 05:29:50 2025
+# Process ID: 10952
 # Current directory: C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1
 # Command line: vivado.exe -log mb_usb_hdmi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_usb_hdmi_top.tcl
 # Log file: C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/mb_usb_hdmi_top.vds
@@ -26,132 +26,141 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29848
+INFO: [Synth 8-7075] Helper process launched with PID 9868
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'counter', assumed default net type 'wire' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:46]
-WARNING: [Synth 8-6901] identifier 'coords' is used before its declaration [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:66]
-WARNING: [Synth 8-6901] identifier 'block' is used before its declaration [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:68]
+INFO: [Synth 8-11241] undeclared symbol 'counter', assumed default net type 'wire' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:47]
+WARNING: [Synth 8-6901] identifier 'coords' is used before its declaration [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:71]
+WARNING: [Synth 8-6901] identifier 'block' is used before its declaration [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:73]
 WARNING: [Synth 8-11121] redeclaration of ANSI port 'coords' is not allowed [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/rotate_block.sv:29]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1216.957 ; gain = 408.699
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.035 ; gain = 408.879
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'game_states' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:23]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[0]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[1]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[2]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[3]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[4]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[5]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[6]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[7]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[8]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[9]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[10]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[11]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[12]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[13]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[14]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[15]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[16]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[17]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[18]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[19]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[20]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[21]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[22]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[23]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[24]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[25]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[26]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[27]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[28]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[29]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[30]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[31]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[32]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[33]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[34]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[35]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[36]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[37]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[38]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[39]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[40]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[41]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[42]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[43]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[44]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[45]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[46]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[47]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[48]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[49]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[50]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[51]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[52]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[53]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[54]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[55]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[56]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[57]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[58]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[59]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[60]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[61]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[62]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[63]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[64]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[65]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[66]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[67]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[68]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[69]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[70]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[71]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[72]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[73]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[74]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[75]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[76]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[77]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[78]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[79]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[80]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[81]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[82]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[83]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[84]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[85]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[86]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[87]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[88]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[89]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[90]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[91]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[92]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[93]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[94]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[95]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[96]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[97]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[98]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[99]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[0]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[1]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[2]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[3]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[4]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[5]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[6]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[7]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[8]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[9]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[10]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[11]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[12]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[13]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[14]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[15]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[16]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[17]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[18]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[19]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[20]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[21]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[22]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[23]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[24]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[25]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[26]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[27]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[28]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[29]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[30]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[31]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[32]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[33]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[34]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[35]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[36]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[37]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[38]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[39]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[40]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[41]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[42]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[43]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[44]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[45]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[46]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[47]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[48]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[49]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[50]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[51]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[52]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[53]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[54]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[55]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[56]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[57]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[58]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[59]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[60]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[61]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[62]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[63]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[64]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[65]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[66]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[67]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[68]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[69]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[70]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[71]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[72]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[73]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[74]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[75]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[76]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[77]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[78]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[79]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[80]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[81]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[82]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[83]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[84]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[85]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[86]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[87]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[88]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[89]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[90]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[91]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[92]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[93]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[94]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[95]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[96]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[97]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[98]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'game_states[99]' is not inferred as ram due to incorrect usage [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:41]
 INFO: [Common 17-14] Message 'Synth 8-7186' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6157] synthesizing module 'lfsr' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/lsfr.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/lsfr.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'rotate_block' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/rotate_block.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'rotate_block' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/rotate_block.sv:23]
-WARNING: [Synth 8-689] width (32) of port connection 'center' does not match port width (8) of module 'rotate_block' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:95]
-WARNING: [Synth 8-689] width (32) of port connection 'rotation' does not match port width (2) of module 'rotate_block' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:97]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:129]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:129]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:129]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:129]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:151]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:151]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:151]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:151]
+WARNING: [Synth 8-689] width (32) of port connection 'center' does not match port width (8) of module 'rotate_block' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:108]
+WARNING: [Synth 8-689] width (32) of port connection 'rotation' does not match port width (2) of module 'rotate_block' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:228]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:248]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:248]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:248]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:248]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:269]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:269]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:269]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:269]
 INFO: [Synth 8-6155] done synthesizing module 'game_states' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv:11]
@@ -164,28 +173,28 @@ INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/johna/Tetris-
 INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv:11]
 INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'ml_block' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1170]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_timer_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_timer_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_timer_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_timer_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'ml_block_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1402]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'ml_block_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1402]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'ml_block_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1402]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'ml_block_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1402]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_uartlite_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_uartlite_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_clk_wiz_1_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_clk_wiz_1_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_2' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_2' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_3' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_3' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_3_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_1' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_1' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_mdm_1_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_mdm_1_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_microblaze_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_microblaze_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_microblaze_0_axi_intc_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_uartlite_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_uartlite_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_clk_wiz_1_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_clk_wiz_1_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_2' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_2' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_3' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_3' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_gpio_0_1' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_gpio_0_1' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_mdm_1_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_mdm_1_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_microblaze_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_microblaze_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_microblaze_0_axi_intc_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'ml_block_microblaze_0_axi_periph_0' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1836]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1GAKQMZ' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1GAKQMZ' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:12]
@@ -203,38 +212,38 @@ INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1DE6KWU' [c:/Users/jo
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1DE6KWU' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:804]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_J7ZCM1' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:2926]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_J7ZCM1' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:2926]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_xbar_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_xbar_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_xbar_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_xbar_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ml_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:2885]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ml_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:2885]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'ml_block_xbar_0' has 40 connections declared, but only 38 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:2885]
 INFO: [Synth 8-6155] done synthesizing module 'ml_block_microblaze_0_axi_periph_0' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1836]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_TFCLUN' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:936]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_dlmb_bram_if_cntlr_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_dlmb_v10_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_dlmb_v10_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_dlmb_bram_if_cntlr_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_dlmb_v10_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_dlmb_v10_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'ml_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1082]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'ml_block_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1082]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_ilmb_bram_if_cntlr_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_ilmb_v10_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_ilmb_v10_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_ilmb_bram_if_cntlr_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_ilmb_v10_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_ilmb_v10_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'ml_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1128]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'ml_block_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1128]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_lmb_bram_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_lmb_bram_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_lmb_bram_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_lmb_bram_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'ml_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1153]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'ml_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1153]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'ml_block_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1153]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_TFCLUN' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:936]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_rst_clk_wiz_1_100M_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_rst_clk_wiz_1_100M_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ml_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1790]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ml_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1790]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'ml_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1790]
-INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_quad_spi_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_quad_spi_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/ml_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ml_block_axi_quad_spi_0_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ml_block_axi_quad_spi_0_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/ml_block_axi_quad_spi_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'ml_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1799]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'ml_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1799]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'ml_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1799]
@@ -246,18 +255,25 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/jo
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'ml_block_xlconcat_0_0' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/ip/ml_block_xlconcat_0_0/synth/ml_block_xlconcat_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'ml_block' (0#1) [c:/Users/johna/Tetris-FPGA/tetris/tetris.gen/sources_1/bd/ml_block/synth/ml_block.v:1170]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:136]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:136]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-30192-LAPTOP-0QM9QC02/realtime/hdmi_tx_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:139]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:139]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/.Xil/Vivado-10952-LAPTOP-0QM9QC02/realtime/hdmi_tx_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/font_rom.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
 INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:14]
 WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/lsfr.sv:22]
+WARNING: [Synth 8-6014] Unused sequential element cant_shift_reg was removed.  [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:128]
+WARNING: [Synth 8-6014] Unused sequential element cant_shift_reg was removed.  [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:237]
+WARNING: [Synth 8-6014] Unused sequential element cd_reg was removed.  [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:324]
+WARNING: [Synth 8-7137] Register past_key_reg in module game_states has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv:218]
+WARNING: [Synth 8-87] always_comb on 'font_addr_reg' did not result in combinational logic [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/Color_Mapper.sv:27]
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -360,18 +376,18 @@ WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1374.422 ; gain = 566.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1386.785 ; gain = 577.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1374.422 ; gain = 566.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1386.785 ; gain = 577.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1374.422 ; gain = 566.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1386.785 ; gain = 577.629
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1374.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1386.785 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -427,25 +443,25 @@ Parsing XDC File [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/dont_tou
 Finished Parsing XDC File [C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1416.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1495.555 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1416.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1495.555 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1495.586 ; gain = 686.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1495.586 ; gain = 686.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -491,40 +507,52 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/xlconcat_0. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1495.586 ; gain = 686.430
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'font_addr_reg' [C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/Color_Mapper.sv:27]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1495.586 ; gain = 686.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   32 Bit       Adders := 13    
 	   2 Input   26 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 9     
+	   3 Input   10 Bit       Adders := 1     
 	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 19    
+	   2 Input    8 Bit       Adders := 18    
+	   4 Input    8 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 2     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               26 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 203   
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
 +---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
 	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 7     
 	   4 Input    8 Bit        Muxes := 46    
-	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
 	   5 Input    4 Bit        Muxes := 2     
-	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 5     
 	   8 Input    4 Bit        Muxes := 3     
 	   2 Input    3 Bit        Muxes := 6014  
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 1     
 	   5 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -541,30 +569,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 1
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 1
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[6] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 1517.875 ; gain = 708.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|font_rom    | ROM        | 1024x8        | LUT            | 
+|font_rom    | ROM        | 1024x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'Clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.480 ; gain = 610.223
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1471.000 ; gain = 662.742
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:26 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -582,37 +622,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:32 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:32 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -665,45 +705,49 @@ Report Cell Usage:
 |18    |ml_block_rst_clk_wiz_1_100M    |     1|
 |19    |ml_block_xbar                  |     1|
 |20    |BUFG                           |     1|
-|21    |CARRY4                         |    22|
-|22    |LUT1                           |    17|
-|23    |LUT2                           |   202|
-|24    |LUT3                           |   809|
-|25    |LUT4                           |   189|
-|26    |LUT5                           |   155|
-|27    |LUT6                           |  1587|
-|28    |MUXF7                          |   110|
-|29    |MUXF8                          |    37|
-|30    |FDCE                           |   672|
-|31    |FDPE                           |     4|
-|32    |FDRE                           |    17|
-|33    |IBUF                           |     4|
-|34    |OBUF                           |    29|
+|21    |CARRY4                         |   850|
+|22    |LUT1                           |    68|
+|23    |LUT2                           |   715|
+|24    |LUT3                           |  2088|
+|25    |LUT4                           |  1496|
+|26    |LUT5                           |  1595|
+|27    |LUT6                           |  3690|
+|28    |MUXF7                          |   249|
+|29    |MUXF8                          |    28|
+|30    |FDCE                           |   747|
+|31    |FDPE                           |    36|
+|32    |FDRE                           |    28|
+|33    |LD                             |    10|
+|34    |LDC                            |    32|
+|35    |IBUF                           |     4|
+|36    |OBUF                           |    29|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1517.875 ; gain = 708.719
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 1485.793 ; gain = 633.477
-Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1485.793 ; gain = 677.535
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:30 . Memory (MB): peak = 1517.875 ; gain = 599.918
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1517.875 ; gain = 708.719
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1497.895 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1517.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1169 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'mb_usb_hdmi_top' is not ideal for floorplanning, since the cellview 'game_states' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1501.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1517.875 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 42 instances were transformed.
+  LD => LDCE: 10 instances
+  LDC => LDCE: 32 instances
 
-Synth Design complete, checksum: b36c71c4
+Synth Design complete, checksum: a121bdfe
 INFO: [Common 17-83] Releasing license: Synthesis
-116 Infos, 248 Warnings, 1 Critical Warnings and 0 Errors encountered.
+118 Infos, 260 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1501.590 ; gain = 1069.371
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:40 . Memory (MB): peak = 1517.875 ; gain = 1084.453
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/johna/Tetris-FPGA/tetris/tetris.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 25 02:42:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 25 05:31:41 2025...
