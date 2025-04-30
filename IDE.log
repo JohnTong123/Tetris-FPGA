@@ -142,3 +142,30 @@ con
 ----------------End of Script----------------
 
 05:11:27 INFO  : Launch script is exported to file 'C:\Users\johna\Tetris-FPGA\asdf_system\_ide\scripts\debugger_asdf-default.tcl'
+07:18:20 INFO  : Disconnected from the channel tcfchan#2.
+07:18:31 DEBUG : Logs will be stored at 'C:/Users/johna/Tetris-FPGA/IDE.log'.
+07:18:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\johna\Tetris-FPGA\temp_xsdb_launch_script.tcl
+07:18:35 INFO  : XSCT server has started successfully.
+07:18:35 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+07:18:35 INFO  : Platform repository initialization has completed.
+07:18:36 INFO  : Registering command handlers for Vitis TCF services
+07:18:36 INFO  : plnx-install-location is set to ''
+07:18:36 INFO  : Successfully done setting XSCT server connection channel  
+07:18:36 INFO  : Successfully done query RDI_DATADIR 
+07:18:36 INFO  : Successfully done setting workspace for the tool. 
+07:20:22 DEBUG : Logs will be stored at 'C:/Users/johna/Tetris-FPGA/IDE.log'.
+07:20:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\johna\Tetris-FPGA\temp_xsdb_launch_script.tcl
+07:20:25 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+07:20:25 INFO  : Platform repository initialization has completed.
+07:20:25 INFO  : Registering command handlers for Vitis TCF services
+07:20:28 INFO  : XSCT server has started successfully.
+07:20:28 INFO  : Successfully done setting XSCT server connection channel  
+07:20:29 INFO  : plnx-install-location is set to ''
+07:20:29 INFO  : Successfully done setting workspace for the tool. 
+07:20:29 INFO  : Successfully done query RDI_DATADIR 

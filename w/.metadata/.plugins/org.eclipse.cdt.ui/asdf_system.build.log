@@ -1,0 +1,6 @@
+08:04:04 **** Build of configuration Debug for project asdf_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+08:04:05 Build Finished (took 669ms)
+

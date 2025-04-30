@@ -7386,3 +7386,833 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launch
 
 !ENTRY com.xilinx.sdk.utils 1 0 2025-04-25 05:11:27.239
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:20.244
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-147
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:20.252
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-147
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-04-25 07:18:23.251
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2025-04-25 07:18:23.252
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-04-25 07:18:23.252
+!MESSAGE The project description file (.project) for 'asdf' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-04-25 07:18:23.252
+!MESSAGE The project description file (.project) for 'asdf_system' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-04-25 07:18:23.252
+!MESSAGE The project description file (.project) for 'pls' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-04-25 07:18:23.362
+!MESSAGE An internal error occurred during: "LabelEventJob".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1166)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:683)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.fireLabelEvent(GitLightweightDecorator.java:706)
+	at org.eclipse.egit.ui.internal.decorators.LabelEventJob.run(GitLightweightDecorator.java:776)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-04-25 07:18:24.207
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2025-04-25 07:18:06.119 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-04-25 07:18:25.005
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2025-04-25 07:18:29.169
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:35.896
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:35.896
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:35.909
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:18:36.009
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:18:36.010
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:18:36.010
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.709
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.709
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.710
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.710
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.727
+!MESSAGE XSCT Command: [setws C:/Users/johna/Tetris-FPGA], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.727
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:18:36.741
+!MESSAGE XSCT command with result: [setws C:/Users/johna/Tetris-FPGA], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-25 07:18:48.382
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.377
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.795
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.870
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.881
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Wed Mar 26 23:25:30 2025",
+"vivado_version": "2022.2",
+"part": "xc7s50csga324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.885
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:00.887
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Result: [null, {"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"gpio_usb_int": {"hier_name": "gpio_usb_int",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"gpio_usb_keycode": {"hier_name": "gpio_usb_keycode",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"gpio_usb_rst": {"hier_name": "gpio_usb_rst",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"spi_usb": {"hier_name": "spi_usb",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.jface 4 2 2025-04-25 07:19:04.009
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.RuntimeException:  Peripheral data not found for null
+	at com.xilinx.sdk.hw.internal.HwPlatform.getComponentVersion(HwPlatform.java:950)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getProcessorVersion(HwPlatform.java:714)
+	at com.xilinx.sdx.npw.page.AddDomainHelper.computeOsList(AddDomainHelper.java:63)
+	at com.xilinx.sdx.npw.page.AddDomainHelper.updateOsList(AddDomainHelper.java:58)
+	at com.xilinx.sdx.npw.page.AddDomainHelper.getOsArray(AddDomainHelper.java:77)
+	at com.xilinx.sdx.npw.page.DomainDetailsComposite.initUi(DomainDetailsComposite.java:149)
+	at com.xilinx.sdx.npw.page.DomainDetailsComposite.lambda$5(DomainDetailsComposite.java:198)
+	at com.xilinx.sdk.utils.ui.BaseComposite.runUiUpdateOperation(BaseComposite.java:53)
+	at com.xilinx.sdx.npw.page.DomainDetailsComposite.initAndUpdate(DomainDetailsComposite.java:198)
+	at com.xilinx.sdx.npw.page.DomainDetailsComposite.updateContext(DomainDetailsComposite.java:194)
+	at com.xilinx.sdx.npw.page.DomainSelectionPage.updateDomainDetailsUI(DomainSelectionPage.java:224)
+	at com.xilinx.sdx.npw.page.DomainSelectionPage.lambda$1(DomainSelectionPage.java:97)
+	at com.xilinx.sdx.npw.page.SingleSelectionList.lambda$1(SingleSelectionList.java:154)
+	at com.xilinx.sdx.npw.page.SingleSelectionList.notifySelectionListeners(SingleSelectionList.java:226)
+	at com.xilinx.sdx.npw.page.SingleSelectionList.lambda$2(SingleSelectionList.java:212)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2129)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1659)
+	at org.eclipse.jface.viewers.TableViewer.setSelection(TableViewer.java:165)
+	at org.eclipse.jface.viewers.Viewer.setSelection(Viewer.java:376)
+	at com.xilinx.sdx.npw.page.SingleSelectionList.initSelection(SingleSelectionList.java:136)
+	at com.xilinx.sdx.npw.page.SingleSelectionList.setListInput(SingleSelectionList.java:120)
+	at com.xilinx.sdx.npw.page.DomainSelectionPage.initDomainListUi(DomainSelectionPage.java:323)
+	at com.xilinx.sdx.npw.page.DomainSelectionPage.updateUI(DomainSelectionPage.java:285)
+	at com.xilinx.sdx.ui.utils.AbstractProjectWizardPage.setVisible(AbstractProjectWizardPage.java:46)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1252)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1222)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1222)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:917)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-25 07:19:13.047
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-25 07:19:27.271
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:31.577
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:19:31.587
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/johna/AppData/Local/Temp/hwspec_mb_usb_hdmi_top8890370804032684468/mb_usb_hdmi_top.xsa], Result: [null, ]. Thread: main
+!SESSION 2025-04-25 07:20:05.481 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 4 567 2025-04-25 07:20:15.344
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.344
+!MESSAGE Could not read metadata for 'asdf'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/asdf)[567]: java.lang.Exception: The project description file (.project) for 'asdf' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.345
+!MESSAGE The project description file (.project) for 'asdf' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'asdf' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.346
+!MESSAGE Could not read metadata for 'asdf_system'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/asdf_system)[567]: java.lang.Exception: The project description file (.project) for 'asdf_system' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.346
+!MESSAGE The project description file (.project) for 'asdf_system' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'asdf_system' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.348
+!MESSAGE Could not read metadata for 'pls'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/pls)[567]: java.lang.Exception: The project description file (.project) for 'pls' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2025-04-25 07:20:15.348
+!MESSAGE The project description file (.project) for 'pls' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'pls' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3137)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3342)
+	at java.base/java.lang.Class.getConstructor(Class.java:2151)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.core.internal.variables.DynamicVariable.getValue(DynamicVariable.java:48)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:273)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:196)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:91)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:547)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:347)
+	at com.xilinx.sdk.utils.DynamicVariableHelper.getResolvedValue(DynamicVariableHelper.java:53)
+	at com.xilinx.sdk.utils.XStringUtils.getResolvedValue(XStringUtils.java:446)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.computeAnalyticsFilePath(ToolAnalyticsHelper.java:108)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.getAnalyticsFilePath(ToolAnalyticsHelper.java:98)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<init>(ToolAnalyticsHelper.java:36)
+	at com.xilinx.sdk.utils.ToolAnalyticsHelper.<clinit>(ToolAnalyticsHelper.java:29)
+	at com.xilinx.ide.application.ui.Application.checkInstanceLocation(Application.java:221)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:74)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.ui 4 4 2025-04-25 07:20:19.616
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:20:25.692
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:20:25.692
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-04-25 07:20:25.693
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:28.705
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:28.705
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:28.719
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:28.721
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:28.722
+!MESSAGE XSCT Command: [setws C:/Users/johna/Tetris-FPGA], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:29.005
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:29.005
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:29.007
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:29.021
+!MESSAGE XSCT command with result: [setws C:/Users/johna/Tetris-FPGA], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-25 07:20:29.023
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-1: Initializing s/w repositories

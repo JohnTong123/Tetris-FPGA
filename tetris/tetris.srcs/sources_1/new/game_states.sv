@@ -89,6 +89,7 @@ logic [1:0] rotation;
 
 logic [7:0] coords[4];
 logic [7:0] random_coords[4];
+logic [7:0] cw_coords[4];
 logic [2:0] r;
 
 
@@ -96,6 +97,7 @@ logic center_left;
 logic center_right;
 logic center_down;
 logic res_center;
+logic in_row;
 
 rotate_block rotate_block(
         .center(center),
@@ -109,6 +111,13 @@ rotate_block rotate_block2(
         .block(random_block),
         .rotation(0), 
         .coords(random_coords)
+);
+
+rotate_block rotate_blockcw(
+        .center(center),
+        .block(block),
+        .rotation((rotation+1) &3),
+        .coords(cw_coords)
 );
 
 
@@ -133,7 +142,7 @@ begin
     begin
         res_center = 0 ;
         center_down= 0 ;
-        Score = Score + 1;
+//        Score = Score + 1;
         if (game_speed)
         begin
             spawn = 0;
@@ -159,9 +168,87 @@ begin
                         game_states[coords[i]-10] = block;
                     end
                 end
+                
+//                for (int i = 0 ; i < 4; i= i+1)
+//                begin
+//                    in_row = 1;
+//                    if (coords[i]>=10)
+//                    begin
+                        
+//                        for(int j = 0 ; j <10; j++)
+//                        begin
+//                            int row = (((coords[i]-10)/10)*10);
+//                            if (game_states[j+row] == 0)
+//                            begin
+//                                in_row = 0;
+//                            end
+//                        end
+//                    end
+//                    else
+//                    begin
+//                        in_row=  0;
+//                    end
+//                    if (in_row)
+//                    begin
+//                        Score += 100;
+//                        if (coords[i]>=20)
+//                        begin
+//                            int row = (((coords[i]-10)/10)*10);
+//                            for(int j = 0 ; j <10; j++)
+//                            begin
+//                                game_states[j+row] = game_states[j+row-10] ;
+//                                game_states[j+row-10]  =0 ;
+//                            end
+//                        end
+//                        else
+//                        begin
+//                            for(int j = 0 ; j <10; j++)
+//                            begin
+//                                game_states[j] = 0 ;
+//                            end
+//                        end
+//                    end
+//                end
 //                center = 3;
                 res_center = 1;
                 rotation = 0 ;
+                
+                in_row = 1;
+                for (int i = 0 ; i < 10; i=i+1)
+                begin
+                    if (game_states[i] == 0 )
+                    begin
+                        in_row = 0;
+                    end 
+                end
+                if (in_row)
+                begin
+                    Score+=100;
+                    for (int i = 0 ; i < 10; i=i+1)
+                    begin
+                        game_states[i] = 0;
+                    end
+                end
+                for(int i = 1; i<20; i=i+1)
+                begin
+                    in_row = 1;
+                    for(int j = 0; j < 10; j=j+1)
+                    begin
+                        if (game_states[i*10 + j] ==0)
+                        begin
+                            in_row = 0;
+                        end
+                    end
+                    if (in_row)
+                    begin
+                        Score+=100;
+                        for (int j = 0 ; j < 10; j=j+1)
+                        begin
+                            game_states[i*10 + j] = game_states[i*10 + j-10];
+                            game_states[i*10 + j-10] = 0;
+                        end
+                    end
+                end
                 
                 block = random_block;
                 for (int i = 0 ; i < 4; i= i+1)
@@ -220,11 +307,13 @@ begin
         keypress = 0 ;
         center_left = 0 ;
         center_right = 0 ;
+        cw = 0 ;
     end
     else
     begin
         center_left = 0;
         center_right = 0;
+        cw = 0;
         if(past_key == keycode && past_key !== 0)
         begin
             
@@ -277,6 +366,24 @@ begin
                             center_right=1;
                         end
                     end
+                    else if (keycode == 8'h1D)
+                    begin
+                        cw =1;
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (cw_coords[i] >=10)
+                            begin
+                                if(game_states[cw_coords[i]-10] !==0)
+                                begin
+                                    cw = 0;
+                                end
+                            end
+                            if (cw_coords[i] %10 < center%10)
+                            begin
+                                cw=0;
+                            end
+                        end
+                    end
                 end
             end
             else
@@ -301,6 +408,8 @@ logic rc;
 logic cd;
 logic cl;
 logic cr;
+logic cw;
+logic cw1;
 always_ff @(posedge game_clk )
 begin
     if (res_center)
@@ -352,6 +461,19 @@ begin
     else
     begin
         cr=0;
+    end
+    
+    if (cw)
+    begin
+        if(cw1==0)
+        begin
+            rotation = (rotation+1)&3;
+            cw1= 1;
+        end
+    end
+    else
+    begin
+        cw1=0;
     end
 end
 
