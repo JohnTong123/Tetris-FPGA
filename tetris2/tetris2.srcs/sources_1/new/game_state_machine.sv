@@ -45,6 +45,8 @@ logic [7:0] game_address;
 
 // blocks and future blocks
 logic [7:0] coords[4]; 
+logic [7:0] spawn_coords[4]; 
+
 logic [2:0] block;
 logic [2:0] random_block;
 logic [1:0] rotation;
@@ -56,6 +58,20 @@ rotate_block rotate_block(
         .rotation(rotation),
         .coords(coords)
 );
+
+rotate_block spawn_block(
+        .center(3),
+        .block(random_block),
+        .rotation(0),
+        .coords(spawn_coords)
+);
+
+//rotate_block rotate_block(
+//        .center(center),
+//        .block(block),
+//        .rotation(rotation),
+//        .coords(coords)
+//);
 
 int Score;
 assign score = Score;
@@ -163,34 +179,110 @@ end
 
 
 //board updating
-logic spawn;
-logic start_game;
-logic res_center;
-logic l;
 
-
+logic center_down;
+logic [19:0] in_row;
 
 always_ff @(posedge game_clk or posedge reset) // determine how to change the board like spawning
 begin
     if (reset)
     begin
-        spawn = 0 ;
-        start_game = 1;
+        center_down = 0;
+        in_row= 0  ;
     end
-    else if (update_board_vars)
+    else if (update_board_state)
     begin
-        spawn = 0;
-        if (start_game)
+        if (spawn)
         begin
-            spawn |= 1;
-            start_game = 0 ;
-        end
-        for (int i = 0 ; i < 4; i= i+1)
-        begin
-            if ((coords[i] > 199) ||  (game_states[coords[i]] !==0))
+            in_row= 0  ;
+            for (int i = 0 ; i < 4; i= i+1)
             begin
-                spawn|=1;
+                if (coords[i]>=10)
+                begin
+                    game_states[coords[i]-10] = block;
+                end
             end
+            
+            for (int i = 0 ; i < 20; i= i+1)
+            begin
+                in_row[i] = 1;
+                for(int j = 10*i; j<10*(i+1); j++)
+                begin
+                    if (game_states[j]!==0)
+                    begin
+                        in_row[i] = 0 ;
+                    end
+                end
+            end
+            
+            for (int i = 0 ; i < 20; i= i+1)
+            begin
+                if (in_row[i])
+                begin
+                    for (int j = i*10+9 ; i >9; i= i-1)
+                    begin
+                        game_states[j] = game_states[j-10];
+                    end
+                    game_states[0]=  0;
+                    game_states[1]=  0;
+                    game_states[2]=  0;
+                    game_states[3]=  0;
+                    game_states[4]=  0;
+                    game_states[5]=  0;
+                    game_states[6]=  0;
+                    game_states[7]=  0;
+                    game_states[8]=  0;
+                    game_states[9]=  0;
+                    
+                end
+            end
+            
+            
+            
+            center_down = 0 ;
+        end
+        else
+        begin
+            in_row= 0  ;
+            center_down = 1;
+        end
+        
+    end
+end
+
+// asdf
+
+always_ff @(posedge game_clk or posedge reset) // update piece
+begin
+    if (reset)
+    begin
+        center = 3;
+        block = random_block;
+        rotation = 0 ;
+    end
+    else if (update_board_state)
+    begin
+        if (spawn)
+        begin
+            rotation = 0 ;
+            center = 3;
+            block = random_block;
+            for (int i = 0 ; i < 4; i= i+1)
+            begin
+                if (spawn_coords[i]>=10)
+                begin
+                    if(game_states[spawn_coords[i]-10] !==0)
+                    begin
+                        block = 0;
+                    end
+                    
+                end
+            end
+                
+        end
+        else if (center_down)
+        begin
+            center = center + 10;
         end
     end
 end

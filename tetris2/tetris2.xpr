@@ -48,6 +48,7 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../ece-385/lab_6_2/RD_hdmi_ip2020"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -134,57 +135,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_mdm_1_0/ml_block_mdm_1_0.xci">
-          <Proxy FileSetName="ml_block_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_clk_wiz_1_0/ml_block_clk_wiz_1_0.xci">
-          <Proxy FileSetName="ml_block_clk_wiz_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_uartlite_0_0/ml_block_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="ml_block_axi_uartlite_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_gpio_0_1/ml_block_axi_gpio_0_1.xci">
-          <Proxy FileSetName="ml_block_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_gpio_0_2/ml_block_axi_gpio_0_2.xci">
-          <Proxy FileSetName="ml_block_axi_gpio_0_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_gpio_0_3/ml_block_axi_gpio_0_3.xci">
-          <Proxy FileSetName="ml_block_axi_gpio_0_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_timer_0_0/ml_block_axi_timer_0_0.xci">
-          <Proxy FileSetName="ml_block_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_microblaze_0_0/ml_block_microblaze_0_0.xci">
-          <Proxy FileSetName="ml_block_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_rst_clk_wiz_1_100M_0/ml_block_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="ml_block_rst_clk_wiz_1_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_dlmb_v10_0/ml_block_dlmb_v10_0.xci">
-          <Proxy FileSetName="ml_block_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_ilmb_bram_if_cntlr_0/ml_block_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="ml_block_ilmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_xbar_0/ml_block_xbar_0.xci">
-          <Proxy FileSetName="ml_block_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_microblaze_0_axi_intc_0/ml_block_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="ml_block_microblaze_0_axi_intc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_ilmb_v10_0/ml_block_ilmb_v10_0.xci">
-          <Proxy FileSetName="ml_block_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_lmb_bram_0/ml_block_lmb_bram_0.xci">
-          <Proxy FileSetName="ml_block_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_dlmb_bram_if_cntlr_0/ml_block_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="ml_block_dlmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ml_block.bd" FileRelPathName="ip/ml_block_axi_quad_spi_0_0/ml_block_axi_quad_spi_0_0.xci">
-          <Proxy FileSetName="ml_block_axi_quad_spi_0_0"/>
-        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/design_source/mb_intro_top.sv">
         <FileInfo>
