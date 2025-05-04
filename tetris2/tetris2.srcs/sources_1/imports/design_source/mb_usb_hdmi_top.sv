@@ -40,7 +40,8 @@ module mb_usb_hdmi_top # (
     output logic [7:0] hex_segA,
     output logic [3:0] hex_gridA,
     output logic [7:0] hex_segB,
-    output logic [3:0] hex_gridB
+    output logic [3:0] hex_gridB,
+    input logic [2:0] switches
 );
     
     logic [31:0] keycode0_gpio, keycode1_gpio;
@@ -52,14 +53,14 @@ module mb_usb_hdmi_top # (
     logic [3:0] red, green, blue;
     logic reset_ah;
     
-    int score;
+    logic [31:0] score;
     
     assign reset_ah = reset_rtl_0;
     logic [2:0] dout;
 //    logic [25:0] counter;
     logic [3:0] gs;
 //    logic [7:0] oof;
-    game_states game 
+    game_state_machine game 
     (
         .game_clk(clk_25MHz),
         .clk(clk_25MHz),
@@ -71,7 +72,8 @@ module mb_usb_hdmi_top # (
 //        .counter(counter),
         .gs(gs),
 //        .debug(oof)
-        .score(score)
+        .score(score),
+        .switches(switches)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     

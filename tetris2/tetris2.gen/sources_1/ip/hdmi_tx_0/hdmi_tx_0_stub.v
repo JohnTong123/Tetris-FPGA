@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Wed Mar 26 23:20:31 2025
+// Date        : Sat May  3 07:07:42 2025
 // Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/johna/ece-385/lab_6_2/lab_6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0_stub.v
+//               c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0_stub.v
 // Design      : hdmi_tx_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1

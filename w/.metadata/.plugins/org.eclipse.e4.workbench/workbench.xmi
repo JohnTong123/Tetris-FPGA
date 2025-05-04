@@ -7,6 +7,9 @@
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId"/>
+    <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fgiNJEfCRGJIh4IGDeA" selectedElement="_rW0fgyNJEfCRGJIh4IGDeA" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_rW0fgyNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_rW0fmSNJEfCRGJIh4IGDeA">
@@ -94,7 +97,7 @@
           </children>
         </children>
         <children xsi:type="advanced:Perspective" xmi:id="_rW0fmSNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.ui.DebugPerspective" selectedElement="_rW0fmiNJEfCRGJIh4IGDeA" label="Debug">
-          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.e4.ui.importer.openDirectory.menu,"/>
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.e4.ui.importer.openDirectory.menu,persp.actionSet:org.eclipse.cdt.ui.buildConfigActionSet,"/>
           <tags>persp.actionSet:com.xilinx.ide.debug.ui.launchActionSet</tags>
           <tags>persp.actionSet:org.eclipse.ide.search.searchActionSet</tags>
           <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
@@ -153,8 +156,8 @@
           <tags>persp.viewSC:com.xilinx.sdx.aie.debug.ui.pipeline.PipeLineView</tags>
           <tags>persp.viewSC:com.xilinx.sdx.aie.debug.ui.statistics.AIEStatisticsView</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fmiNJEfCRGJIh4IGDeA" selectedElement="_rW0fqCNJEfCRGJIh4IGDeA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fmyNJEfCRGJIh4IGDeA" containerData="2500">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fnCNJEfCRGJIh4IGDeA" containerData="6000" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fmyNJEfCRGJIh4IGDeA" containerData="2500" selectedElement="_rW0fnCNJEfCRGJIh4IGDeA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fnCNJEfCRGJIh4IGDeA" containerData="6000" selectedElement="_rW0fnSNJEfCRGJIh4IGDeA" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_rW0fnSNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="5000" selectedElement="_rW0fniNJEfCRGJIh4IGDeA">
                   <tags>org.eclipse.e4.primaryNavigationStack</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_rW0fniNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.ui.DebugView" ref="_rW0ifiNJEfCRGJIh4IGDeA" closeable="true">
@@ -196,9 +199,9 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqCNJEfCRGJIh4IGDeA" containerData="7500" selectedElement="_rW0fwSNJEfCRGJIh4IGDeA">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqSNJEfCRGJIh4IGDeA" containerData="7500" horizontal="true">
-                <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqiNJEfCRGJIh4IGDeA" containerData="6500">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqCNJEfCRGJIh4IGDeA" containerData="7500" selectedElement="_rW0fqSNJEfCRGJIh4IGDeA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqSNJEfCRGJIh4IGDeA" containerData="7500" selectedElement="_rW0friNJEfCRGJIh4IGDeA" horizontal="true">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fqiNJEfCRGJIh4IGDeA" containerData="6500" selectedElement="_rW0fqyNJEfCRGJIh4IGDeA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_rW0fqyNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.editorss" containerData="6000" ref="_rW0g-iNJEfCRGJIh4IGDeA"/>
                   <children xsi:type="basic:PartStack" xmi:id="_rW0frCNJEfCRGJIh4IGDeA" elementId="org.eclipse.cdt.dsf.debug.ui.disassembly.viewMStack" toBeRendered="false" containerData="4000">
                     <children xsi:type="advanced:Placeholder" xmi:id="_rW0frSNJEfCRGJIh4IGDeA" elementId="org.eclipse.cdt.dsf.debug.ui.disassembly.view" toBeRendered="false" ref="_rW0jDiNJEfCRGJIh4IGDeA" closeable="true">
@@ -207,9 +210,10 @@
                     </children>
                   </children>
                 </children>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_rW0friNJEfCRGJIh4IGDeA" containerData="3500">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_rW0friNJEfCRGJIh4IGDeA" containerData="3500" selectedElement="_rW0fryNJEfCRGJIh4IGDeA">
                   <children xsi:type="basic:PartStack" xmi:id="_rW0fryNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" containerData="5000" selectedElement="_rW0fsCNJEfCRGJIh4IGDeA">
                     <tags>org.eclipse.e4.secondaryNavigationStack</tags>
+                    <tags>active</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_rW0fsCNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.ui.VariableView" ref="_rW0ityNJEfCRGJIh4IGDeA" closeable="true">
                       <tags>View</tags>
                       <tags>categoryTag:Debug</tags>
@@ -282,7 +286,6 @@
               <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fwSNJEfCRGJIh4IGDeA" containerData="2500" selectedElement="_rW0fwiNJEfCRGJIh4IGDeA" horizontal="true">
                 <children xsi:type="basic:PartSashContainer" xmi:id="_rW0fwiNJEfCRGJIh4IGDeA" containerData="7000" selectedElement="_rW0fwyNJEfCRGJIh4IGDeA" horizontal="true">
                   <children xsi:type="basic:PartStack" xmi:id="_rW0fwyNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="7000" selectedElement="_rW0fxCNJEfCRGJIh4IGDeA">
-                    <tags>active</tags>
                     <tags>noFocus</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_rW0fxCNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.console.ConsoleView" ref="_rW0iTSNJEfCRGJIh4IGDeA" closeable="true">
                       <tags>View</tags>
@@ -407,6 +410,9 @@
       <menus xsi:type="menu:PopupMenu" xmi:id="_rW0hDSNJEfCRGJIh4IGDeA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
       </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_gHtBsCfpEfCXEeAOKQjRsQ" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
       <toolbar xmi:id="_rW0iPCNJEfCRGJIh4IGDeA" elementId="com.xilinx.ide.projectExplorer"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_rW0iQSNJEfCRGJIh4IGDeA" elementId="com.xilinx.sdx.assistant.assistantView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Assistant" iconURI="platform:/plugin/com.xilinx.sdx.assistant/icons/assistant_view.png" tooltip="Assistant to manage Scout project setup, builds, and reports." closeable="true">
@@ -427,7 +433,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
       <menus xmi:id="_rW0iTiNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -534,6 +539,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Debug</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_rW0iuCNJEfCRGJIh4IGDeA" elementId="org.eclipse.debug.ui.VariableView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -755,9 +762,6 @@
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_rW0jaSNJEfCRGJIh4IGDeA" elementId="group.nav" toBeRendered="false"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rW0jaiNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.workbench.navigate">
-        <tags>Draggable</tags>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_rW0jcCNJEfCRGJIh4IGDeA" elementId="org.eclipse.cdt.ui.editor.CEditor" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rW0jcSNJEfCRGJIh4IGDeA" elementId="group.editor" toBeRendered="false">
@@ -2189,18 +2193,18 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
-  <trimContributions xmi:id="_rW8gHCNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
-    <children xsi:type="menu:ToolControl" xmi:id="_rW8gHSNJEfCRGJIh4IGDeA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
       <tags>glue</tags>
       <tags>move_after:PerspectiveSpacer</tags>
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
-    <children xsi:type="menu:ToolControl" xmi:id="_rW8gHiNJEfCRGJIh4IGDeA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
       <tags>move_after:Spacer Glue</tags>
       <tags>HIDEABLE</tags>
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
-    <children xsi:type="menu:ToolControl" xmi:id="_rW8gHyNJEfCRGJIh4IGDeA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
       <tags>glue</tags>
       <tags>move_after:SearchField</tags>
       <tags>SHOW_RESTORE_MENU</tags>
@@ -3328,6 +3332,7 @@
   <addons xmi:id="_rW8kYiNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_rW8kYyNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_rW8kZCNJEfCRGJIh4IGDeA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_e5St0SfpEfCXEeAOKQjRsQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_rW8kZSNJEfCRGJIh4IGDeA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_rW8kZiNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_rW8kZyNJEfCRGJIh4IGDeA" elementId="org.eclipse.ui.category.edit" name="Edit"/>

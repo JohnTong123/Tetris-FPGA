@@ -1,0 +1,207 @@
+Data_For_RDAFlowver5.0
+	top levelßó
+mb_usb_hdmi_topÃ
+LinkDesign_BlackboxesD
+-mb_block_i/microblaze_0_local_memory/lmb_bramml_block_lmb_bram_0D
+ mb_block_i/microblaze_0_axi_intc ml_block_microblaze_0_axi_intc_0,
+mb_block_i/clk_wiz_1ml_block_clk_wiz_1_06
+mb_block_i/axi_uartlite_0ml_block_axi_uartlite_0_0D
+-mb_block_i/microblaze_0_local_memory/dlmb_v10ml_block_dlmb_v10_0D
+-mb_block_i/microblaze_0_local_memory/ilmb_v10ml_block_ilmb_v10_04
+mb_block_i/gpio_usb_keycodeml_block_axi_gpio_0_3X
+7mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlrml_block_ilmb_bram_if_cntlr_00
+mb_block_i/axi_timer_0ml_block_axi_timer_0_0>
+mb_block_i/rst_clk_wiz_1_100Mml_block_rst_clk_wiz_1_100M_0
+vga_to_hdmi	hdmi_tx_0:
+'mb_block_i/microblaze_0_axi_periph/xbarml_block_xbar_0X
+7mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlrml_block_dlmb_bram_if_cntlr_00
+mb_block_i/gpio_usb_rstml_block_axi_gpio_0_1$
+mb_block_i/mdm_1ml_block_mdm_1_0/
+mb_block_i/spi_usbml_block_axi_quad_spi_0_00
+mb_block_i/gpio_usb_intml_block_axi_gpio_0_2
+clk_wiz	clk_wiz_02
+mb_block_i/microblaze_0ml_block_microblaze_0_0≤8
+synthFileNamesJ
+10DC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdG
+11AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdK
+12EC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdI
+13CC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdI
+14CC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdF
+20@C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDSUB_MACRO.vM
+15GC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdH
+21BC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SDP_MACRO.vH
+16BC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdK
+22EC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.vC
+17=C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MACC_MACRO.vhdC
+18=C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MULT_MACRO.vhdH
+23BC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.vG
+19AC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDMACC_MACRO.vL
+24FC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vJ
+25DC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_TC_MACRO.vD
+30>C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MULT_MACRO.v
+NumFileNames78J
+26DC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vJ
+31DC:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18.vhd=
+18C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VCOMP.vhdN
+27HC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vK
+32EC:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18S.vhd<
+27C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VPKG.vhdI
+28CC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_SYNC_MACRO.v@
+33:C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:
+35C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.vD
+29>C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MACC_MACRO.vB
+34<C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv=
+48C:/Xilinx/Vivado/2022.2/scripts/rt/data/internal_cells.vF
+35@C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.svS
+40MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/rotate_block.sv3
+5.C:/Xilinx/Vivado/2022.2/scripts/rt/data/BUFT.ve
+36_C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/design_source/Color_Mapper.svK
+41EC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/lsfr.svF
+6AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/unimacro_VCOMP.vhdg
+37aC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/design_source/VGA_controller.svO
+42IC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/font_rom.svE
+7@C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDMACC_MACRO.vhdh
+38bC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.svY
+43SC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/game_state_machine.svD
+8?C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDSUB_MACRO.vhdZ
+39TC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/srcs/hex_driver.svà
+44ÅC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_0_stub.v
+50yC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_xbar_0_stub.vF
+9AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhdÉ
+45}C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_v10_0_stub.vë
+51äC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_microblaze_0_axi_intc_0_stub.vÉ
+46}C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_v10_0_stub.vÄ
+52zC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_mdm_1_0_stub.vé
+47áC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_dlmb_bram_if_cntlr_0_stub.vÑ
+53~C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_clk_wiz_1_0_stub.vé
+48áC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_ilmb_bram_if_cntlr_0_stub.vé
+54áC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_rst_clk_wiz_1_100M_0_stub.vÉ
+49}C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_lmb_bram_0_stub.vä
+60ÉC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_quad_spi_0_0_stub.vä
+55ÉC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_uartlite_0_0_stub.vy
+61sC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/hdmi_tx_0_stub.vÖ
+56C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_1_stub.vy
+62sC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/clk_wiz_0_stub.vÖ
+57C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_2_stub.vZ
+63TC:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/ml_block_wrapper.vÖ
+58C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_gpio_0_3_stub.v[
+64Uc:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/bd/ml_block/synth/ml_block.vá
+59ÄC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/.Xil/Vivado-37204-LAPTOP-0QM9QC02/realtime/ml_block_axi_timer_0_0_stub.vV
+70PC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/numeric_std.vhds
+65mc:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/bd/ml_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.vQ
+71KC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/textio.vhdÅ
+66{c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/bd/ml_block/ip/ml_block_xlconcat_0_0/synth/ml_block_xlconcat_0_0.vS
+72MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/timing_p.vhd7
+671C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhdS
+73MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/timing_b.vhdS
+68MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/std_1164.vhdS
+74MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/prmtvs_p.vhdS
+69MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/standard.vhdS
+75MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/prmtvs_b.vhdS
+76MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/syn_arit.vhdS
+77MC:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/synth_1/1993/src/syn_unsi.vhd
+
+synthStatsÆI
+ElaboratedNamesForRQSîI
+DSP_RAM 
+2600961 {game/ccw_count0_i} 
+2826241 {game/st_count0_i} 
+249882 {vga/vc_i__0} ∞
+184322• {game/curr_block/coords0_i__0} {game/rotated_block/coords0_i__0} {game/rotatedc_block/coords0_i__0} {game/spawn_block/coords0_i__0} {game/store_block/coords0_i__0} °
+155650ñ {game/curr_block/coords0_i} {game/rotated_block/coords0_i} {game/rotatedc_block/coords0_i} {game/spawn_block/coords0_i} {game/store_block/coords0_i} t
+2539521i {game/game_states1_i__91} {game/game_states1_i__92} {game/game_states1_i__93} {game/game_states1_i__94} µ
+253954™ {game/curr_block/coords0_i__10} {game/rotated_block/coords0_i__10} {game/rotatedc_block/coords0_i__10} {game/spawn_block/coords0_i__10} {game/store_block/coords0_i__10} ;
+4792331 {game/game_address0_i__0} {game/game_address_i} ∞
+159746• {game/curr_block/coords0_i__3} {game/rotated_block/coords0_i__3} {game/rotatedc_block/coords0_i__3} {game/spawn_block/coords0_i__3} {game/store_block/coords0_i__3} ∞
+225282• {game/curr_block/coords0_i__9} {game/rotated_block/coords0_i__9} {game/rotatedc_block/coords0_i__9} {game/spawn_block/coords0_i__9} {game/store_block/coords0_i__9}  
+1499137 {game/center0_i__0} /
+225285% {HexA/counter0_i} {HexB/counter0_i} N
+421915D {color_instance/font_addr0_i__5} {color_instance/font_addr1_i__20} `
+548865V {game/data_out2_i} {game/data_out2_i__1} {game/data_out2_i__2} {game/data_out2_i__3} 
+286746 {vga/hc0_i} 
+90115 {game/lfsr/ct_i}  
+1515521 {game/center0_i__1} t
+2056193i {game/game_states1_i__79} {game/game_states1_i__80} {game/game_states1_i__81} {game/game_states1_i__82} ∞
+192514• {game/curr_block/coords0_i__6} {game/rotated_block/coords0_i__6} {game/rotatedc_block/coords0_i__6} {game/spawn_block/coords0_i__6} {game/store_block/coords0_i__6} ∞
+163842• {game/curr_block/coords0_i__4} {game/rotated_block/coords0_i__4} {game/rotatedc_block/coords0_i__4} {game/spawn_block/coords0_i__4} {game/store_block/coords0_i__4} 
+94211 {game/lfsr/ct1_i} M
+581633C {game/data_out2_i__5} {game/data_out3_i__1} {game/data_out5_i__0} 
+3002369 {game/sp_count0_i} ∞
+196610• {game/curr_block/coords0_i__8} {game/rotated_block/coords0_i__8} {game/rotatedc_block/coords0_i__8} {game/spawn_block/coords0_i__8} {game/store_block/coords0_i__8} Ñ
+65541{ {HexA/hex_i} {HexA/hex_i__0} {HexA/hex_i__1} {HexA/hex_i__2} {HexB/hex_i} {HexB/hex_i__0} {HexB/hex_i__1} {HexB/hex_i__2} 
+2355201 {game/cw_count0_i} è
+1155073É {game/Score0_i} {game/Score0_i__0} {game/Score0_i__1} {game/Score0_i__10} {game/Score0_i__11} {game/Score0_i__12} {game/Score0_i__13} {game/Score0_i__14} {game/Score0_i__15} {game/Score0_i__16} {game/Score0_i__17} {game/Score0_i__18} {game/Score0_i__2} {game/Score0_i__3} {game/Score0_i__4} {game/Score0_i__5} {game/Score0_i__6} {game/Score0_i__7} {game/Score0_i__8} {game/Score0_i__9} !
+1863681 {game/left_count0_i} ∞
+167938• {game/curr_block/coords0_i__7} {game/rotated_block/coords0_i__7} {game/rotatedc_block/coords0_i__7} {game/spawn_block/coords0_i__7} {game/store_block/coords0_i__7} #
+454683 {color_instance/Red0_i} 
+2768897 {game/st_temp_i} #
+430107 {color_instance/Red2_i} t
+1576961i {game/game_states1_i__95} {game/game_states1_i__96} {game/game_states1_i__97} {game/game_states1_i__98} t
+1810433i {game/game_states1_i__83} {game/game_states1_i__84} {game/game_states1_i__85} {game/game_states1_i__86} ’
+3104769… {game/hard_drop_dist2_i__10} {game/hard_drop_dist2_i__100} {game/hard_drop_dist2_i__103} {game/hard_drop_dist2_i__106} {game/hard_drop_dist2_i__109} {game/hard_drop_dist2_i__112} {game/hard_drop_dist2_i__115} {game/hard_drop_dist2_i__118} {game/hard_drop_dist2_i__121} {game/hard_drop_dist2_i__124} {game/hard_drop_dist2_i__127} {game/hard_drop_dist2_i__13} {game/hard_drop_dist2_i__130} {game/hard_drop_dist2_i__133} {game/hard_drop_dist2_i__136} {game/hard_drop_dist2_i__139} {game/hard_drop_dist2_i__142} {game/hard_drop_dist2_i__145} {game/hard_drop_dist2_i__148} {game/hard_drop_dist2_i__151} {game/hard_drop_dist2_i__154} {game/hard_drop_dist2_i__157} {game/hard_drop_dist2_i__16} {game/hard_drop_dist2_i__160} {game/hard_drop_dist2_i__163} {game/hard_drop_dist2_i__166} {game/hard_drop_dist2_i__169} {game/hard_drop_dist2_i__172} {game/hard_drop_dist2_i__175} {game/hard_drop_dist2_i__178} {game/hard_drop_dist2_i__181} {game/hard_drop_dist2_i__184} {game/hard_drop_dist2_i__187} {game/hard_drop_dist2_i__19} {game/hard_drop_dist2_i__190} {game/hard_drop_dist2_i__193} {game/hard_drop_dist2_i__196} {game/hard_drop_dist2_i__199} {game/hard_drop_dist2_i__202} {game/hard_drop_dist2_i__205} {game/hard_drop_dist2_i__208} {game/hard_drop_dist2_i__211} {game/hard_drop_dist2_i__214} {game/hard_drop_dist2_i__217} {game/hard_drop_dist2_i__22} {game/hard_drop_dist2_i__220} {game/hard_drop_dist2_i__223} {game/hard_drop_dist2_i__226} {game/hard_drop_dist2_i__229} {game/hard_drop_dist2_i__232} {game/hard_drop_dist2_i__25} {game/hard_drop_dist2_i__28} {game/hard_drop_dist2_i__31} {game/hard_drop_dist2_i__34} {game/hard_drop_dist2_i__37} {game/hard_drop_dist2_i__40} {game/hard_drop_dist2_i__43} {game/hard_drop_dist2_i__46} {game/hard_drop_dist2_i__49} {game/hard_drop_dist2_i__52} {game/hard_drop_dist2_i__55} {game/hard_drop_dist2_i__58} {game/hard_drop_dist2_i__61} {game/hard_drop_dist2_i__64} {game/hard_drop_dist2_i__67} {game/hard_drop_dist2_i__7} {game/hard_drop_dist2_i__70} {game/hard_drop_dist2_i__73} {game/hard_drop_dist2_i__76} {game/hard_drop_dist2_i__79} {game/hard_drop_dist2_i__82} {game/hard_drop_dist2_i__85} {game/hard_drop_dist2_i__88} {game/hard_drop_dist2_i__91} {game/hard_drop_dist2_i__94} {game/hard_drop_dist2_i__97} "
+2105345 {game/right_count0_i} !
+503809 {game/data_out2_i__9} "
+1548289 {game/rotation0_i__0} 
+393242 {vga/vs3_i} 
+368641 {game/rotation1_i} !
+724993 {game/clock_count2_i} 
+1482753 {game/center0_i} !
+339969 {game/rotation1_i__0} ]
+532481S {game/data_out2_i__0} {game/data_out3_i__0} {game/data_out4_i} {game/data_out5_i} ∞
+241666• {game/curr_block/coords0_i__2} {game/rotated_block/coords0_i__2} {game/rotatedc_block/coords0_i__2} {game/spawn_block/coords0_i__2} {game/store_block/coords0_i__2} ∞
+212994• {game/curr_block/coords0_i__1} {game/rotated_block/coords0_i__1} {game/rotatedc_block/coords0_i__1} {game/spawn_block/coords0_i__1} {game/store_block/coords0_i__1} 
+339994 {vga/hs3_i} t
+2293761i {game/game_states1_i__87} {game/game_states1_i__88} {game/game_states1_i__89} {game/game_states1_i__90} S
+143387I {color_instance/Blue_i} {color_instance/Green_i} {color_instance/Red_i} æ
+3112961≤ {game/game_states1_i__10} {game/game_states1_i__11} {game/game_states1_i__12} {game/game_states1_i__13} {game/game_states1_i__14} {game/game_states1_i__15} {game/game_states1_i__16} {game/game_states1_i__17} {game/game_states1_i__18} {game/game_states1_i__19} {game/game_states1_i__20} {game/game_states1_i__21} {game/game_states1_i__22} {game/game_states1_i__23} {game/game_states1_i__24} {game/game_states1_i__25} {game/game_states1_i__26} {game/game_states1_i__27} {game/game_states1_i__28} {game/game_states1_i__29} {game/game_states1_i__3} {game/game_states1_i__30} {game/game_states1_i__31} {game/game_states1_i__32} {game/game_states1_i__33} {game/game_states1_i__34} {game/game_states1_i__35} {game/game_states1_i__36} {game/game_states1_i__37} {game/game_states1_i__38} {game/game_states1_i__39} {game/game_states1_i__4} {game/game_states1_i__40} {game/game_states1_i__41} {game/game_states1_i__42} {game/game_states1_i__43} {game/game_states1_i__44} {game/game_states1_i__45} {game/game_states1_i__46} {game/game_states1_i__47} {game/game_states1_i__48} {game/game_states1_i__49} {game/game_states1_i__5} {game/game_states1_i__50} {game/game_states1_i__51} {game/game_states1_i__52} {game/game_states1_i__53} {game/game_states1_i__54} {game/game_states1_i__55} {game/game_states1_i__56} {game/game_states1_i__57} {game/game_states1_i__58} {game/game_states1_i__59} {game/game_states1_i__6} {game/game_states1_i__60} {game/game_states1_i__61} {game/game_states1_i__62} {game/game_states1_i__63} {game/game_states1_i__64} {game/game_states1_i__65} {game/game_states1_i__66} {game/game_states1_i__67} {game/game_states1_i__68} {game/game_states1_i__69} {game/game_states1_i__7} {game/game_states1_i__70} {game/game_states1_i__71} {game/game_states1_i__72} {game/game_states1_i__73} {game/game_states1_i__74} {game/game_states1_i__75} {game/game_states1_i__76} {game/game_states1_i__77} {game/game_states1_i__78} {game/game_states1_i__8} {game/game_states1_i__9} 
+1110017 {game/in_row_i} ∞
+217090• {game/curr_block/coords0_i__5} {game/rotated_block/coords0_i__5} {game/rotatedc_block/coords0_i__5} {game/spawn_block/coords0_i__5} {game/store_block/coords0_i__5} 1
+1650689& {game/center0_i__2} {game/center1_i} w
+1404929l {game/game_states1_i__100} {game/game_states1_i__101} {game/game_states1_i__102} {game/game_states1_i__99} c
+598017Y {game/data_out2_i__4} {game/data_out2_i__6} {game/data_out2_i__7} {game/data_out2_i__8} 
+1531905 {game/rotation0_i} 
+274458 {vga/vc0_i} (
+2629660 {color_instance/font/ROM_i} í
+1073153Ü {game/game_states_reg[199]1_i} {game/game_states_reg[199]1_i__0} {game/game_states_reg[199]1_i__1} {game/game_states_reg[199]1_i__2} √
+blackBoxInfoD
+-mb_block_i/microblaze_0_local_memory/lmb_bramml_block_lmb_bram_0D
+ mb_block_i/microblaze_0_axi_intc ml_block_microblaze_0_axi_intc_0,
+mb_block_i/clk_wiz_1ml_block_clk_wiz_1_06
+mb_block_i/axi_uartlite_0ml_block_axi_uartlite_0_0D
+-mb_block_i/microblaze_0_local_memory/dlmb_v10ml_block_dlmb_v10_0D
+-mb_block_i/microblaze_0_local_memory/ilmb_v10ml_block_ilmb_v10_04
+mb_block_i/gpio_usb_keycodeml_block_axi_gpio_0_3X
+7mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlrml_block_ilmb_bram_if_cntlr_00
+mb_block_i/axi_timer_0ml_block_axi_timer_0_0>
+mb_block_i/rst_clk_wiz_1_100Mml_block_rst_clk_wiz_1_100M_0
+vga_to_hdmi	hdmi_tx_0:
+'mb_block_i/microblaze_0_axi_periph/xbarml_block_xbar_0X
+7mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlrml_block_dlmb_bram_if_cntlr_00
+mb_block_i/gpio_usb_rstml_block_axi_gpio_0_1$
+mb_block_i/mdm_1ml_block_mdm_1_0/
+mb_block_i/spi_usbml_block_axi_quad_spi_0_00
+mb_block_i/gpio_usb_intml_block_axi_gpio_0_2
+clk_wiz	clk_wiz_02
+mb_block_i/microblaze_0ml_block_microblaze_0_0ä
+synth_design
+isIncremental0
+Runtime4
+Threads used2^
+argsV-verilog_define default::[not_specified] -top  mb_usb_hdmi_top -part  xc7s50csga324-1 
+resynthPerc0.00
+Cputime1
+blackBoxPercinf
+	directive ù
+synth_design_metrics$
+mismatchedAddSubOperatorWidths-1
+lowMaxFanout-1
+NumUnregisteredPorts0
+caseNotFullNoDefault-1
+	smallSrls-1
+srlsWithResetLogic-1
+shallowRAMWithAttribute-1
+hierMFO0
+bigRAMs-1
+NetsWithMixedFanouts-1
+DSPsWithKeep0
+RQS_Results

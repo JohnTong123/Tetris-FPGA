@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="asd" location="C:/Users/johna/Tetris-FPGA/l/asd" platform="C:/Users/johna/Tetris-FPGA/l/testing/export/testing/testing.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="asd_system" sysConfig="testing" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="7fe34cbe3a6a1a0200c70c0c14322f4d">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1973877091">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1629526547" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

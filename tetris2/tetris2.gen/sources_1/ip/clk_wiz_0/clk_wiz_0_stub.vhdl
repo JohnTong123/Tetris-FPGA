@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Wed Mar 26 23:22:30 2025
+-- Date        : Sat May  3 07:07:38 2025
 -- Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/johna/ece-385/lab_6_2/lab_6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
+--               c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
 -- Design      : clk_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1
