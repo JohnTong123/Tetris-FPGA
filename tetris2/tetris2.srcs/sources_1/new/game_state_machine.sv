@@ -37,7 +37,8 @@ parameter integer DATA_WIDTH = 3
     output logic [31:0] score,
     input [2:0] switches,
     output logic drop,
-    output logic finished
+    output logic finished,
+    output logic starter
     );
 
 logic progress;
@@ -110,11 +111,29 @@ rotate_block store_block(
 logic[31:0] Score;
 assign score = Score;
 
+
 lfsr lfsr(
     .clk(game_clk),
     .reset(reset),
     .rand_val(random_block)
 );
+
+logic start_screen;
+assign starter = start_screen;
+always_ff @(posedge game_clk or posedge reset) // game clock
+begin
+    if (reset)
+    begin
+        start_screen = 1;
+    end
+    else
+    begin
+        if(start_key)
+        begin
+            start_screen &=0;
+        end
+    end
+end
 
 logic [7:0] relative_coord;
 assign game_address = (DrawX>>>4) + 10 *  (DrawY>>>4);
@@ -168,7 +187,7 @@ logic [25:0] cap;
 logic upd;
 always_ff @(posedge game_clk or posedge reset) // game clock
 begin
-    if (reset)
+    if (reset | start_key)
     begin
         cap = 6250000;
         upd = 0 ;
@@ -201,7 +220,7 @@ end
 
 always_ff @(posedge game_clk or posedge reset) // game clock
 begin
-    if (reset)
+    if (reset | start_key)
     begin
         clock_count = 0 ;
         update_board_vars = 0 ;
@@ -233,7 +252,7 @@ logic l;
 
 always_ff @(posedge game_clk or posedge reset) // determine how to change the board like spawning
 begin
-    if (reset)
+    if (reset | start_key)
     begin
         spawn = 0 ;
         start_game = 1;
@@ -274,7 +293,7 @@ logic create_block;
 
 always_ff @(posedge game_clk or posedge reset) // determine how to change the board like spawning
 begin
-    if (reset)
+    if (reset | start_key)
     begin
         center_down = 0;
         in_row= 0  ;
@@ -361,7 +380,7 @@ logic end_game;
 logic can_swap;
 always_ff @(posedge game_clk or posedge reset) // update piece
 begin
-    if (reset)
+    if (reset | start_key)
     begin
         center = 3;
         block = 0;
@@ -908,6 +927,51 @@ begin
        
     end
 end
+
+
+
+logic [13:0] start_ct;
+logic start_key;
+always_ff @(posedge game_clk or posedge reset) // update key
+begin
+    if (reset)
+    begin
+        start_ct = 0 ;
+        start_key = 0 ;
+    end
+    else
+    begin
+       if (keycode == 8'h16 |switches[2] )
+       begin
+            
+            if(start_ct&(1<<11))
+            begin
+                if (start_ct&(1<<13))
+                begin
+                    start_key = 0 ;
+                end
+                else
+                begin
+                    
+                    start_ct[13] = 1;
+                    start_key = 1;
+                end
+            end
+            else
+            begin
+                start_ct+=1;
+            end
+       end
+       else
+       begin
+            start_key = 0 ;
+            start_ct = 0 ;
+       end
+       
+    end
+end
+
+
 
 
 endmodule

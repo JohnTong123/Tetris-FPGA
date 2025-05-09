@@ -56,6 +56,7 @@ module mb_usb_hdmi_top # (
     logic reset_ah;
     logic finished;
     logic drop;
+    logic starter;
     logic [31:0] score;
     
     assign reset_ah = reset_rtl_0;
@@ -78,7 +79,8 @@ module mb_usb_hdmi_top # (
         .score(score),
         .switches(switches),
         .finished(finished),
-        .drop(drop)
+        .drop(drop),
+        .starter(starter)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     
@@ -199,7 +201,8 @@ module mb_usb_hdmi_top # (
         .Red(red),
         .Green(green),
         .Blue(blue),
-        .finished(finished)
+        .finished(finished),
+        .starter(starter)
     );
     
     top_module sound(

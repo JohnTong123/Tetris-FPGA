@@ -108,6 +108,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/triangle_lut.sv
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/toplevel.sv
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/nco.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/lol.sv
 }
 read_verilog -library xil_defaultlib C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/ml_block_wrapper.v
 add_files C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/bd/ml_block/ml_block.bd
