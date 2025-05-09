@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -97,6 +96,9 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/srcs/hex_driver.sv
   C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/game_states.sv
+  C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/rotate_block.sv
+  C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/lsfr.sv
+  C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/new/font_rom.sv
 }
 read_verilog -library xil_defaultlib C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/imports/ml_block_wrapper.v
 add_files C:/Users/johna/Tetris-FPGA/tetris/tetris.srcs/sources_1/bd/ml_block/ml_block.bd

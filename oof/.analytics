@@ -1,0 +1,10 @@
+timestamp=[2025-04-25 07:21:11], mode=WORKBENCH_START, duration=0:00:07.386, duration_ms=7386, data={}
+timestamp=[2025-04-25 07:21:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.440, duration_ms=440, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-04-25 07:21:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.044, duration_ms=44, data={}
+timestamp=[2025-04-25 07:21:45], mode=APP_CREATION, duration=0:00:06.454, duration_ms=6454, data={name=asdf, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=sob, application_type=application}
+timestamp=[2025-04-25 07:23:17], mode=PLATFORM_GENERATION, duration=0:00:15.129, duration_ms=15129, data={name=sob}
+timestamp=[2025-04-25 07:23:20], mode=BUILD, duration=0:00:03.625, duration_ms=3625, data={name=asdf, configuration=Debug, clean_build=false}
+timestamp=[2025-04-25 07:25:47], mode=BUILD, duration=0:00:01.200, duration_ms=1200, data={name=asdf, configuration=Debug, clean_build=false}
+timestamp=[2025-04-25 07:30:49], mode=WORKBENCH_START, duration=0:00:08.541, duration_ms=8541, data={}
+timestamp=[2025-04-25 07:30:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.765, duration_ms=765, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,asdf,asdf_system,sob}
+timestamp=[2025-04-25 07:30:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.040, duration_ms=40, data={}

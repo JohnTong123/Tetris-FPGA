@@ -14,32 +14,20 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input  logic [9:0] DrawX, DrawY, input logic [3:0] state,
-                       output logic [3:0]  Red, Green, Blue );
-    
-	 
- /* Old Ball: Generated square box by checking if the current pixel is within a square of length
-    2*BallS, centered at (BallX, BallY).  Note that this requires unsigned comparisons.
-	 
-    if ((DrawX >= BallX - Ball_size) &&
-       (DrawX <= BallX + Ball_size) &&
-       (DrawY >= BallY - Ball_size) &&
-       (DrawY <= BallY + Ball_size))
-       )
+module  color_mapper (
+    input  logic [9:0] DrawX, DrawY,
+    input logic [2:0] state,
+    input int score,
+    output logic [3:0]  Red, Green, Blue );
 
-     New Ball: Generates (pixelated) circle by using the standard circle formula.  Note that while 
-     this single line is quite powerful descriptively, it causes the synthesis tool to use up three
-     of the 120 available multipliers on the chip!  Since the multiplicants are required to be signed,
-	  we have to first cast them from logic to int (signed by default) before they are multiplied). */
-	  
-  
+	 logic [9:0] font_addr;
+	 logic [7:0] font_data;
+	 
+	 font_rom font(
+	   .addr(font_addr),
+	   .data(font_data)
+	   );
 
-    
-    
-    always_comb
-    begin
-        
-    end
     always_comb
     begin:RGB_Display
         if (((DrawX<10'd160) && (DrawY<10'd320))) begin 
@@ -92,12 +80,38 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY, input logic [3:0] state,
                 Green = 4'h0;
                 Blue = 4'h0;
                 end
-              
-//            Red = 4'hf;
-//            Green = 4'h7;
-//            Blue = 4'h0;
+
               endcase
-        end       
+        end
+        else if (((DrawX >= 10'd24) && (DrawX<10'd128) && (DrawY>=10'd340) && (DrawY < 10'd356))) begin 
+            if(DrawX < 32) font_addr = 464;
+            else if(DrawX < 40) font_addr = 208;
+            else if(DrawX < 48) font_addr = 400;
+            else if(DrawX < 56) font_addr = 448;
+            else if(DrawX < 64) font_addr = 240;
+            else if(DrawX < 72) font_addr = 160;
+            
+            else if(DrawX < 80) font_addr = ((score/1000000) % 10) << 4;
+            else if(DrawX < 88) font_addr = ((score/100000) % 10) << 4;
+            else if(DrawX < 96) font_addr = ((score/10000) % 10) << 4;
+            else if(DrawX < 104) font_addr = ((score/1000) % 10) << 4;
+            else if(DrawX < 112) font_addr = ((score/100) % 10) << 4;
+            else if(DrawX < 120) font_addr = ((score/10) % 10) << 4;
+            else if(DrawX < 128) font_addr = (score % 10) << 4;
+        
+            font_addr = font_addr + DrawY - 340;
+        
+             if (font_data[7 - (DrawX % 8)])
+                begin
+                    Red = 4'h0;
+                    Green = 4'h0;
+                    Blue = 4'h0;
+                end else begin
+                    Red = 4'hf - DrawX[9:6]; 
+                    Green = 4'hf - DrawX[9:6];
+                    Blue = 4'hf - DrawX[9:6];
+                end
+        end
         else begin 
             Red = 4'hf - DrawX[9:6]; 
             Green = 4'hf - DrawX[9:6];

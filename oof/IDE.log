@@ -1,0 +1,225 @@
+07:21:08 DEBUG : Logs will be stored at 'C:/Users/johna/Tetris-FPGA/oof/IDE.log'.
+07:21:13 INFO  : Platform repository initialization has completed.
+07:21:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\johna\Tetris-FPGA\oof\temp_xsdb_launch_script.tcl
+07:21:13 INFO  : Registering command handlers for Vitis TCF services
+07:21:17 INFO  : XSCT server has started successfully.
+07:21:17 INFO  : Successfully done setting XSCT server connection channel  
+07:21:17 INFO  : plnx-install-location is set to ''
+07:21:17 INFO  : Successfully done setting workspace for the tool. 
+07:21:17 INFO  : Successfully done query RDI_DATADIR 
+07:21:41 INFO  : Result from executing command 'getProjects': sob
+07:21:41 INFO  : Result from executing command 'getPlatforms': 
+07:21:41 WARN  : An unexpected exception occurred in the module 'platform project logging'
+07:21:42 INFO  : Platform 'sob' is added to custom repositories.
+07:21:45 INFO  : Platform 'sob' is added to custom repositories.
+07:23:16 INFO  : Result from executing command 'getProjects': sob
+07:23:16 INFO  : Result from executing command 'getPlatforms': sob|C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/sob.xpfm
+07:23:17 INFO  : Checking for BSP changes to sync application flags for project 'asdf'...
+07:23:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:23:34 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:23:34 INFO  : 'jtag frequency' command is executed.
+07:23:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:23:35 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+07:23:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa'.
+07:23:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:23:36 INFO  : Context for processor 'microblaze_0' is selected.
+07:23:36 INFO  : System reset is completed.
+07:23:39 INFO  : 'after 3000' command is executed.
+07:23:39 INFO  : Context for processor 'microblaze_0' is selected.
+07:23:39 INFO  : The application 'C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf' is downloaded to processor 'microblaze_0'.
+07:23:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf
+----------------End of Script----------------
+
+07:23:39 INFO  : Context for processor 'microblaze_0' is selected.
+07:23:39 INFO  : 'con' command is executed.
+07:23:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:23:39 INFO  : Launch script is exported to file 'C:\Users\johna\Tetris-FPGA\oof\asdf_system\_ide\scripts\debugger_asdf-default.tcl'
+07:25:46 INFO  : Checking for BSP changes to sync application flags for project 'asdf'...
+07:25:51 INFO  : Disconnected from the channel tcfchan#2.
+07:25:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:52 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:25:52 INFO  : 'jtag frequency' command is executed.
+07:25:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:25:54 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:25:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:25:54 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:25:54 INFO  : 'jtag frequency' command is executed.
+07:25:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:25:56 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:25:56 INFO  : Context for processor 'microblaze_0' is selected.
+07:25:56 INFO  : Context for processor 'microblaze_0' is selected.
+07:25:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa'.
+07:25:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa'.
+07:25:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:25:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:25:56 INFO  : Context for processor 'microblaze_0' is selected.
+07:25:56 INFO  : Context for processor 'microblaze_0' is selected.
+07:25:56 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:25:56 INFO  : System reset is completed.
+07:25:56 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:25:56 INFO  : System reset is completed.
+07:25:56 INFO  : 'jtag frequency' command is executed.
+07:25:59 INFO  : 'after 3000' command is executed.
+07:25:59 INFO  : 'jtag frequency' command is executed.
+07:26:02 INFO  : 'after 3000' command is executed.
+07:26:02 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:02 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:02 INFO  : The application 'C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf' is downloaded to processor 'microblaze_0'.
+07:26:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf
+----------------End of Script----------------
+
+07:26:02 INFO  : The application 'C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf' is downloaded to processor 'microblaze_0'.
+07:26:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf
+----------------End of Script----------------
+
+07:26:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:26:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:26:02 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:04 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:26:05 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:26:05 ERROR : Already running
+07:26:05 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:05 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:05 INFO  : Disconnected from the channel tcfchan#3.
+07:26:05 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+07:26:05 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+07:26:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+07:26:05 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+07:26:05 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+07:26:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+----------------End of Script----------------
+
+07:26:05 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+07:26:05 WARN  : channel "tcfchan#3" closed
+07:26:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:26:27 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:26:27 INFO  : 'jtag frequency' command is executed.
+07:26:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:26:29 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:26:29 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa'.
+07:26:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:26:29 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:29 INFO  : System reset is completed.
+07:26:32 INFO  : 'after 3000' command is executed.
+07:26:32 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:32 INFO  : The application 'C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf' is downloaded to processor 'microblaze_0'.
+07:26:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf
+----------------End of Script----------------
+
+07:26:32 INFO  : Context for processor 'microblaze_0' is selected.
+07:26:32 INFO  : 'con' command is executed.
+07:26:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:26:32 INFO  : Launch script is exported to file 'C:\Users\johna\Tetris-FPGA\oof\asdf_system\_ide\scripts\debugger_asdf-default.tcl'
+07:27:46 INFO  : Disconnected from the channel tcfchan#4.
+07:30:45 DEBUG : Logs will be stored at 'C:/Users/johna/Tetris-FPGA/oof/IDE.log'.
+07:30:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\johna\Tetris-FPGA\oof\temp_xsdb_launch_script.tcl
+07:30:50 INFO  : XSCT server has started successfully.
+07:30:50 INFO  : Successfully done setting XSCT server connection channel  
+07:30:50 INFO  : plnx-install-location is set to ''
+07:30:50 INFO  : Successfully done setting workspace for the tool. 
+07:30:51 INFO  : Platform repository initialization has completed.
+07:30:51 INFO  : Registering command handlers for Vitis TCF services
+07:30:51 INFO  : Successfully done query RDI_DATADIR 
+07:31:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:31:16 INFO  : Jtag cable 'RealDigital Boo 88710000000BA' is selected.
+07:31:16 INFO  : 'jtag frequency' command is executed.
+07:31:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+07:31:18 INFO  : Device configured successfully with "C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit"
+07:31:18 INFO  : Context for processor 'microblaze_0' is selected.
+07:31:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa'.
+07:31:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:31:18 INFO  : Context for processor 'microblaze_0' is selected.
+07:31:18 INFO  : System reset is completed.
+07:31:21 INFO  : 'after 3000' command is executed.
+07:31:21 INFO  : Context for processor 'microblaze_0' is selected.
+07:31:21 INFO  : The application 'C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf' is downloaded to processor 'microblaze_0'.
+07:31:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000BA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/johna/Tetris-FPGA/oof/asdf/_ide/bitstream/sob.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/johna/Tetris-FPGA/oof/sob/export/sob/hw/sob.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/johna/Tetris-FPGA/oof/asdf/Debug/asdf.elf
+----------------End of Script----------------
+
+07:31:22 INFO  : Context for processor 'microblaze_0' is selected.
+07:31:22 INFO  : 'con' command is executed.
+07:31:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:31:22 INFO  : Launch script is exported to file 'C:\Users\johna\Tetris-FPGA\oof\asdf_system\_ide\scripts\debugger_asdf-default.tcl'
+08:01:51 INFO  : Disconnected from the channel tcfchan#1.

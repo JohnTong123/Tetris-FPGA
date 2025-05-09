@@ -1,0 +1,6 @@
+01:13:46 **** Incremental Build of configuration Debug for project asdf ****
+make all 
+make: Nothing to be done for 'all'.
+
+01:13:46 Build Finished (took 206ms)
+

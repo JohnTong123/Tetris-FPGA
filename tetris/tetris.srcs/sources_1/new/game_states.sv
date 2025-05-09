@@ -21,7 +21,7 @@
 
 
 module game_states #(
-parameter integer DATA_WIDTH = 4
+parameter integer DATA_WIDTH = 3
 )
 (
     input logic game_clk,
@@ -31,31 +31,94 @@ parameter integer DATA_WIDTH = 4
     input logic [31:0] keycode,
     input logic reset,
     output logic [DATA_WIDTH-1:0] data_out,
-    output logic [25:0] counter,
+//    output logic [25:0] counter,
     output logic [3:0] gs,
-    output logic [7:0] debug
+//    output logic [7:0] debug
+    output int score
     );
 
 logic progress;
-logic [DATA_WIDTH-1:0] game_states[200];
+(* ram_style = "block" *) logic [DATA_WIDTH-1:0] game_states[200];
 logic [19:0] dels;
 logic spawn;
 logic [7:0] game_address;
 
 logic [25:0] ct;
 assign counter = ct;
-assign gs[0] = game_speed;
-assign gs[1] = spawn ;
-assign debug = game_states[4];
+assign gs[0] = spawn;
+//assign gs[1] = spawn ;
+//assign debug = game_states[4];
 logic game_speed;
 logic empty;
+logic [2:0] random_block;
+logic cant_shift;
+
+int Score;
+assign score = Score;
+
+lfsr lfsr(
+    .clk(game_speed),
+    .reset(reset),
+    .rand_val(random_block)
+);
 
 assign game_address = (DrawX>>>4) + 10 *  (DrawY>>>4);
-assign data_out = game_states[game_address];
-assign gs[2] = empty;
+always_comb
+begin
+    data_out = game_states[game_address];
+    for (int i = 0 ; i < 4; i=i+1)
+    begin
+        if (coords[i] == 10+game_address)
+        begin
+            data_out = block;
+        end
+    end
+end
+
+//assign data_out = game_states[game_address] | (());
+//assign gs[2] = empty;
 
 
+logic keypress;
+logic [13:0] key_count;
+logic [31:0] past_key;
+logic [7:0] center;
 
+logic [2:0] block;
+logic [1:0] rotation;
+
+logic [7:0] coords[4];
+logic [7:0] random_coords[4];
+logic [7:0] cw_coords[4];
+logic [2:0] r;
+
+
+logic center_left;
+logic center_right;
+logic center_down;
+logic res_center;
+logic in_row;
+
+rotate_block rotate_block(
+        .center(center),
+        .block(block),
+        .rotation(rotation),
+        .coords(coords)
+);
+
+rotate_block rotate_block2(
+        .center(3),
+        .block(random_block),
+        .rotation(0), 
+        .coords(random_coords)
+);
+
+rotate_block rotate_blockcw(
+        .center(center),
+        .block(block),
+        .rotation((rotation+1) &3),
+        .coords(cw_coords)
+);
 
 
 always_ff @(posedge game_speed or posedge reset)
@@ -67,66 +130,146 @@ begin
             game_states[i] = 0;
         end
         empty = 1;
+        spawn = 0;
+        res_center = 1;
+        rotation = 0 ;
+        block = 0;
+        cant_shift = 0;
+        center_down = 0;
+        Score = 0;
     end
-    else
+    else 
     begin
-        if (spawn)
+        res_center = 0 ;
+        center_down= 0 ;
+//        Score = Score + 1;
+        if (game_speed)
         begin
-            for (int i = 0 ; i < 200; i= i+1)
+            spawn = 0;
+            if (empty)
             begin
-                game_states[i][3] = 0;
+                spawn |= 1;
+                empty = 0 ;
             end
-            game_states[4] = 4'b1001;
-            game_states[5] = 4'b1001;
-            game_states[6] = 4'b1001;
-            game_states[7] = 4'b1001;
-            empty = 0;
-        end
-        else
-        begin
-    //        gs[2] = empty;
-            for (int i = 199; i >9; i= i-1)
+            for (int i = 0 ; i < 4; i= i+1)
             begin
-                if (game_states[i-10]&8)
+                if ((coords[i] > 199) ||  (game_states[coords[i]] !==0))
                 begin
-                    game_states[i] = game_states[i-10];
-                    game_states[i-10]=0;
+                    spawn|=1;
                 end
             end
             
+            if (spawn)
+            begin
+                for (int i = 0 ; i < 4; i= i+1)
+                begin
+                    if (coords[i]>=10)
+                    begin
+                        game_states[coords[i]-10] = block;
+                    end
+                end
+                
+//                for (int i = 0 ; i < 4; i= i+1)
+//                begin
+//                    in_row = 1;
+//                    if (coords[i]>=10)
+//                    begin
+                        
+//                        for(int j = 0 ; j <10; j++)
+//                        begin
+//                            int row = (((coords[i]-10)/10)*10);
+//                            if (game_states[j+row] == 0)
+//                            begin
+//                                in_row = 0;
+//                            end
+//                        end
+//                    end
+//                    else
+//                    begin
+//                        in_row=  0;
+//                    end
+//                    if (in_row)
+//                    begin
+//                        Score += 100;
+//                        if (coords[i]>=20)
+//                        begin
+//                            int row = (((coords[i]-10)/10)*10);
+//                            for(int j = 0 ; j <10; j++)
+//                            begin
+//                                game_states[j+row] = game_states[j+row-10] ;
+//                                game_states[j+row-10]  =0 ;
+//                            end
+//                        end
+//                        else
+//                        begin
+//                            for(int j = 0 ; j <10; j++)
+//                            begin
+//                                game_states[j] = 0 ;
+//                            end
+//                        end
+//                    end
+//                end
+//                center = 3;
+                res_center = 1;
+                rotation = 0 ;
+                
+                in_row = 1;
+                for (int i = 0 ; i < 10; i=i+1)
+                begin
+                    if (game_states[i] == 0 )
+                    begin
+                        in_row = 0;
+                    end 
+                end
+                if (in_row)
+                begin
+                    Score+=100;
+                    for (int i = 0 ; i < 10; i=i+1)
+                    begin
+                        game_states[i] = 0;
+                    end
+                end
+                for(int i = 1; i<20; i=i+1)
+                begin
+                    in_row = 1;
+                    for(int j = 0; j < 10; j=j+1)
+                    begin
+                        if (game_states[i*10 + j] ==0)
+                        begin
+                            in_row = 0;
+                        end
+                    end
+                    if (in_row)
+                    begin
+                        Score+=100;
+                        for (int j = 0 ; j < 10; j=j+1)
+                        begin
+                            game_states[i*10 + j] = game_states[i*10 + j-10];
+                            game_states[i*10 + j-10] = 0;
+                        end
+                    end
+                end
+                
+                block = random_block;
+                for (int i = 0 ; i < 4; i= i+1)
+                begin
+                    if (random_coords[i]>=10)
+                    begin
+                        if(game_states[random_coords[i]-10] !==0)
+                        begin
+                            block = 0;
+                        end
+                        
+                    end
+                end
+            end
+            else
+            begin
+        //        gs[2] = empty;
+                center_down = 1;
+            end
         end
-    end
-end
 
-always_ff @(negedge game_speed or posedge reset)
-begin
-    if (reset)
-    begin
-        spawn = 0 ;
-    end
-    else
-    begin
-        spawn = 0;
-        
-        for (int i = 0 ; i < 190; i= i+1)
-        begin
-            if ((game_states[i][3] ==1) && (game_states[i+10][3] ==0) && (game_states[i+10][2:0]&7))
-            begin
-                spawn=1;
-            end
-        end
-        for(int i = 190 ; i < 200; i++)
-        begin
-            if (game_states[i][3] == 1)
-            begin
-                spawn = 1;
-            end
-        end
-        
-        if (empty)
-        begin
-            spawn = 1;
-        end
     end
     
 end
@@ -141,7 +284,7 @@ begin
     else
     begin
     
-        if (ct == 6250000)
+        if (ct == 3125000)
         begin
             game_speed ^=1;
             ct = 0 ;
@@ -155,9 +298,183 @@ begin
      
 end
     
+always_ff @(posedge game_clk or posedge reset)
+begin
+    if (reset)
+    begin
+        past_key = keycode;
+        key_count = 0 ;
+        keypress = 0 ;
+        center_left = 0 ;
+        center_right = 0 ;
+        cw = 0 ;
+    end
+    else
+    begin
+        center_left = 0;
+        center_right = 0;
+        cw = 0;
+        if(past_key == keycode && past_key !== 0)
+        begin
+            
+            if (key_count & (1<<13))
+            begin
+                if (keypress == 0)
+                begin
+                    
+                    keypress=1;
+                    cant_shift = 0 ;
+                    if (keycode == 8'h50)
+                    begin
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (coords[i]%10 == 0)
+                            begin
+                                cant_shift = 1;
+                            end
+                            else if (coords[i]>=10)
+                            begin
+                                if (game_states[coords[i]-11] !== 0)
+                                begin
+                                    cant_shift = 1;
+                                end
+                            end
+                        end
+                        if(cant_shift == 0)
+                        begin
+                            center_left=1;
+                        end
+                    end
+                    else if (keycode == 8'h4F)
+                    begin
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (coords[i]%10 == 9)
+                            begin
+                                cant_shift = 1;
+                            end
+                            else if (coords[i]>=10)
+                            begin
+                                if (game_states[coords[i]-9] !== 0)
+                                begin
+                                    cant_shift = 1;
+                                end
+                            end
+                        end
+                        if(cant_shift == 0 )
+                        begin
+                            center_right=1;
+                        end
+                    end
+                    else if (keycode == 8'h1D)
+                    begin
+                        cw =1;
+                        for (int i = 0 ; i < 4; i= i+1)
+                        begin
+                            if (cw_coords[i] >=10)
+                            begin
+                                if(game_states[cw_coords[i]-10] !==0)
+                                begin
+                                    cw = 0;
+                                end
+                            end
+                            if (cw_coords[i] %10 < center%10)
+                            begin
+                                cw=0;
+                            end
+                        end
+                    end
+                end
+            end
+            else
+            begin
+                key_count+=1 ;
+                keypress = 0 ;
+            end
+        end
+        else
+        begin
+            key_count = 0 ;
+            keypress = 0 ;
+        end
+        
+        
+        
+        past_key = keycode;
+    end
     
-
-
-
+end
+logic rc;
+logic cd;
+logic cl;
+logic cr;
+logic cw;
+logic cw1;
+always_ff @(posedge game_clk )
+begin
+    if (res_center)
+    begin
+        if (rc==0)
+        begin
+            center=3;
+            rc = 1;
+        end
+    end
+    else
+    begin
+        rc=0;
+    end
+    
+    if (center_down)
+    begin
+        if ((ct == 10) && (game_speed))
+        begin
+            center+=10;
+            cd=1;
+        end
+    end
+    else
+    begin
+        cd=0;
+    end
+    
+    if (center_left)
+    begin
+        if(cl==0)
+        begin
+            center-=1;
+            cl=1;
+        end
+    end
+    else
+    begin
+        cl=0;
+    end
+    if (center_right)
+    begin
+        if(cr==0)
+        begin
+            cr=1;
+            center+=1;
+        end
+    end
+    else
+    begin
+        cr=0;
+    end
+    
+    if (cw)
+    begin
+        if(cw1==0)
+        begin
+            rotation = (rotation+1)&3;
+            cw1= 1;
+        end
+    end
+    else
+    begin
+        cw1=0;
+    end
+end
 
 endmodule

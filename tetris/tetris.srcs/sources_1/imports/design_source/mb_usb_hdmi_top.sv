@@ -12,7 +12,7 @@
 
 
 module mb_usb_hdmi_top # (
-    parameter integer C_S_AXI_DATA_WIDTH	= 4
+    parameter integer C_S_AXI_DATA_WIDTH	= 3
 )
 (
     input logic Clk,
@@ -52,11 +52,13 @@ module mb_usb_hdmi_top # (
     logic [3:0] red, green, blue;
     logic reset_ah;
     
+    int score;
+    
     assign reset_ah = reset_rtl_0;
-    logic [3:0] dout;
-    logic [25:0] counter;
+    logic [2:0] dout;
+//    logic [25:0] counter;
     logic [3:0] gs;
-    logic [7:0] oof;
+//    logic [7:0] oof;
     game_states game 
     (
         .game_clk(clk_25MHz),
@@ -66,9 +68,10 @@ module mb_usb_hdmi_top # (
         .keycode(keycode0_gpio),
         .reset(reset_ah),
         .data_out(dout),
-        .counter(counter),
+//        .counter(counter),
         .gs(gs),
-        .debug(oof)
+//        .debug(oof)
+        .score(score)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     
@@ -95,7 +98,7 @@ module mb_usb_hdmi_top # (
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({gs, data_out, oof[3:0], counter[19:16]}),
+        .in({0,4'd1,0,0}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -103,7 +106,7 @@ module mb_usb_hdmi_top # (
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({counter[15:12], counter[11:8], counter[7:4], counter[3:0]}),
+        .in({0, 0, 0, 0}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
@@ -185,6 +188,7 @@ module mb_usb_hdmi_top # (
         .DrawX(drawX),
         .DrawY(drawY),
         .state(dout),
+        .score(score),
         .Red(red),
         .Green(green),
         .Blue(blue)

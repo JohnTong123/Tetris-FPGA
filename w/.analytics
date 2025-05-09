@@ -1,0 +1,13 @@
+timestamp=[2025-04-25 08:00:44], mode=WORKBENCH_START, duration=0:00:06.311, duration_ms=6311, data={}
+timestamp=[2025-04-25 08:00:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.559, duration_ms=559, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-04-25 08:00:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.055, duration_ms=55, data={}
+timestamp=[2025-04-25 08:01:12], mode=APP_CREATION, duration=0:00:04.301, duration_ms=4301, data={name=asdf, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=dub, application_type=application}
+timestamp=[2025-04-25 08:03:16], mode=WORKBENCH_START, duration=0:00:06.207, duration_ms=6207, data={}
+timestamp=[2025-04-25 08:03:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.423, duration_ms=423, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,asdf,asdf_system,dub}
+timestamp=[2025-04-25 08:03:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.021, duration_ms=21, data={}
+timestamp=[2025-04-25 08:04:01], mode=PLATFORM_GENERATION, duration=0:00:10.833, duration_ms=10833, data={name=dub}
+timestamp=[2025-04-25 08:04:03], mode=BUILD, duration=0:00:02.690, duration_ms=2690, data={name=asdf, configuration=Debug, clean_build=false}
+timestamp=[2025-04-25 08:04:05], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=asdf_system, configuration=Debug, clean_build=false}
+timestamp=[2025-05-03 01:40:28], mode=WORKBENCH_START, duration=0:00:08.483, duration_ms=8483, data={}
+timestamp=[2025-05-03 01:40:28], mode=WORKBENCH_UI_INIT, duration=0:00:00.669, duration_ms=669, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,asdf,asdf_system,dub}
+timestamp=[2025-05-03 01:40:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.048, duration_ms=48, data={}
