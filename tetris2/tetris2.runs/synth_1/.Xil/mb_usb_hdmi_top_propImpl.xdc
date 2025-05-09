@@ -89,3 +89,5 @@ set_property src_info {type:XDC file:1 line:93 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN F2 [get_ports {switches[1]}]
 set_property src_info {type:XDC file:1 line:94 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN F1 [get_ports {switches[0]}]
+set_property src_info {type:XDC file:1 line:100 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B13 [get_ports audio_out]

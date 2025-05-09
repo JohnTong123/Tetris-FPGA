@@ -72,6 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -99,6 +100,12 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/lsfr.sv
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/font_rom.sv
   C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/new/game_state_machine.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/song_rom.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/pwm.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/phase_lut.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/triangle_lut.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/toplevel.sv
+  C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/Downloads/nco.sv
 }
 read_verilog -library xil_defaultlib C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/imports/ml_block_wrapper.v
 add_files C:/Users/johna/Tetris-FPGA/tetris2/tetris2.srcs/sources_1/bd/ml_block/ml_block.bd

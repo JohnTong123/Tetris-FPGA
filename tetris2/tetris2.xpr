@@ -226,6 +226,60 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/song_rom.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/song_rom.sv"/>
+          <Attr Name="ImportTime" Val="1746766746"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/pwm.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/pwm.sv"/>
+          <Attr Name="ImportTime" Val="1746766744"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/phase_lut.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/phase_lut.sv"/>
+          <Attr Name="ImportTime" Val="1746766742"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/triangle_lut.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/triangle_lut.sv"/>
+          <Attr Name="ImportTime" Val="1746766735"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/toplevel.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/toplevel.sv"/>
+          <Attr Name="ImportTime" Val="1746766747"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/nco.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/nco.sv"/>
+          <Attr Name="ImportTime" Val="1746766739"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="mb_usb_hdmi_top"/>

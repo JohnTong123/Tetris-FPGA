@@ -35,7 +35,8 @@ parameter integer DATA_WIDTH = 3
     output logic [3:0] gs,
 //    output logic [7:0] debug
     output logic [31:0] score,
-    input [2:0] switches
+    input [2:0] switches,
+    output logic drop
     );
 
 logic progress;
@@ -43,7 +44,7 @@ logic [DATA_WIDTH-1:0] game_states[200];
 logic [19:0] dels;
 logic [7:0] game_address;
 
-
+assign drop = spawn;
 // blocks and future blocks
 logic [7:0] coords[4]; 
 logic [7:0] spawn_coords[4]; 

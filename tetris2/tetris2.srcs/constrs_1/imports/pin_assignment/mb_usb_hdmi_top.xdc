@@ -95,3 +95,8 @@ set_property PACKAGE_PIN F1 [get_ports {switches[0]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {switches[2]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {switches[1]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {switches[0]}]
+
+
+set_property PACKAGE_PIN B13 [get_ports audio_out]
+
+set_property IOSTANDARD LVCMOS33 [get_ports audio_out]

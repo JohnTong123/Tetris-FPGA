@@ -104,19 +104,19 @@ module  color_mapper (
         
              if (font_data[7 - (DrawX % 8)])
                 begin
-                    Red = 4'h0;
-                    Green = 4'h0;
-                    Blue = 4'h0;
+                    Red = 4'hf;
+                    Green = 4'hf;
+                    Blue = 4'hf;
                 end else begin
-                    Red = 4'hf - DrawX[9:6]; 
-                    Green = 4'hf - DrawX[9:6];
-                    Blue = 4'hf - DrawX[9:6];
+                    Red = 4'h1; 
+                    Green = 4'h1;
+                    Blue = 4'h1;
                 end
         end
         else begin 
-            Red = 4'hf - DrawX[9:6]; 
-            Green = 4'hf - DrawX[9:6];
-            Blue = 4'hf - DrawX[9:6];
+            Red = 4'h1; 
+            Green = 4'h1;
+            Blue = 4'h1;
         end      
     end 
     
