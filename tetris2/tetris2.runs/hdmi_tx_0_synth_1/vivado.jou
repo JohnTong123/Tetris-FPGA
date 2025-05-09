@@ -2,12 +2,12 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat May  3 07:07:02 2025
-# Process ID: 54584
+# Start of session at: Fri May  9 05:56:02 2025
+# Process ID: 24788
 # Current directory: C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/hdmi_tx_0_synth_1
 # Command line: vivado.exe -log hdmi_tx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_tx_0.tcl
 # Log file: C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/hdmi_tx_0_synth_1/hdmi_tx_0.vds
 # Journal file: C:/Users/johna/Tetris-FPGA/tetris2/tetris2.runs/hdmi_tx_0_synth_1\vivado.jou
-# Running On: LAPTOP-0QM9QC02, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16541 MB
+# Running On: johnathant, OS: Windows, CPU Frequency: 4491 MHz, CPU Physical cores: 16, Host memory: 33443 MB
 #-----------------------------------------------------------
 source hdmi_tx_0.tcl -notrace

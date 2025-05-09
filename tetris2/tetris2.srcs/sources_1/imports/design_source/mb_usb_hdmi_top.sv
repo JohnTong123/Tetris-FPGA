@@ -60,7 +60,7 @@ module mb_usb_hdmi_top # (
     logic [2:0] dout;
 //    logic [25:0] counter;
     logic [3:0] gs;
-    
+    logic game_ended;
     logic drop;
 //    logic [7:0] oof;
     game_state_machine game 
@@ -77,7 +77,8 @@ module mb_usb_hdmi_top # (
 //        .debug(oof)
         .score(score),
         .switches(switches),
-        .drop(drop)
+        .drop(drop),
+        .finished(game_ended)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     
@@ -197,7 +198,8 @@ module mb_usb_hdmi_top # (
         .score(score),
         .Red(red),
         .Green(green),
-        .Blue(blue)
+        .Blue(blue),
+        .finished(game_ended)
     );
     
     top_module noise(

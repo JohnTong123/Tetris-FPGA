@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Wed Mar 26 23:26:44 2025
-// Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
+// Date        : Fri May  9 05:57:05 2025
+// Host        : johnathant running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/johna/ece-385/lab_6_2/lab_6_2.gen/sources_1/bd/ml_block/ip/ml_block_axi_timer_0_0/ml_block_axi_timer_0_0_sim_netlist.v
+//               c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/bd/ml_block/ip/ml_block_axi_timer_0_0/ml_block_axi_timer_0_0_sim_netlist.v
 // Design      : ml_block_axi_timer_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

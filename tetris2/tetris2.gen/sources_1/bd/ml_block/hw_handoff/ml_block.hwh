@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 26 23:25:30 2025" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  9 05:54:44 2025" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="ml_block" PACKAGE="csga324" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="O" LEFT="15" NAME="gpio_rtl_0_tri_o" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" NAME="uart_rtl_0_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
@@ -13,18 +12,6 @@
     <PORT DIR="O" NAME="uart_rtl_0_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="15" NAME="gpio_rtl_1_tri_i" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="3" NAME="gpio_rtl_2_tri_i" RIGHT="0" SIGIS="undef"/>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_in1"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="reset_rtl_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="0" NAME="gpio_usb_int_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="gpio_usb_int_gpio_io_i">
@@ -45,6 +32,16 @@
     <PORT DIR="O" LEFT="0" NAME="gpio_usb_rst_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="gpio_usb_rst_gpio_io_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="gpio_usb_rst" PORT="gpio_io_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_rtl_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="usb_spi_mosi" SIGIS="undef" SIGNAME="spi_usb_io0_o">
@@ -71,9 +68,7 @@
 
   <EXTERNALINTERFACES>
     <BUSINTERFACE BUSNAME="__NOC__" NAME="gpio_rtl_0" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_rtl_0_tri_o"/>
-      </PORTMAPS>
+      <PORTMAPS/>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="axi_uartlite_0_UART" NAME="uart_rtl_0" TYPE="INITIATOR">
       <PORTMAPS>
@@ -82,14 +77,10 @@
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="__NOC__" NAME="gpio_rtl_1" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_rtl_1_tri_i"/>
-      </PORTMAPS>
+      <PORTMAPS/>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="__NOC__" NAME="gpio_rtl_2" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_rtl_2_tri_i"/>
-      </PORTMAPS>
+      <PORTMAPS/>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="gpio_usb_int_GPIO" NAME="gpio_usb_int" TYPE="INITIATOR">
       <PORTMAPS>
@@ -4974,8 +4965,8 @@
         <PARAMETER NAME="C_NUM_INTR_INPUTS" VALUE="4"/>
         <PARAMETER NAME="C_NUM_SW_INTR" VALUE="0"/>
         <PARAMETER NAME="C_KIND_OF_INTR" VALUE="0xfffffffa"/>
-        <PARAMETER NAME="C_KIND_OF_EDGE" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="C_KIND_OF_LVL" VALUE="0xFFFFFFFF"/>
+        <PARAMETER NAME="C_KIND_OF_EDGE" VALUE="0xffffffff"/>
+        <PARAMETER NAME="C_KIND_OF_LVL" VALUE="0xffffffff"/>
         <PARAMETER NAME="C_ASYNC_INTR" VALUE="0xFFFFFFF0"/>
         <PARAMETER NAME="C_NUM_SYNC_FF" VALUE="2"/>
         <PARAMETER NAME="C_ADDR_WIDTH" VALUE="32"/>
@@ -5588,6 +5579,26 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M05_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M05_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_AWADDR"/>
@@ -6118,16 +6129,6 @@
             <CONNECTION INSTANCE="gpio_usb_rst" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M05_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M05_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M05_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="spi_usb" PORT="s_axi_awaddr"/>
@@ -6213,16 +6214,6 @@
         <PORT DIR="O" NAME="M05_AXI_rready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M05_AXI_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="spi_usb" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awaddr">

@@ -52,7 +52,6 @@
 
 (* X_CORE_INFO = "hdmi_tx_v1_0,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "hdmi_tx_0,hdmi_tx_v1_0,{}" *)
-(* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module hdmi_tx_0 (
   pix_clk,

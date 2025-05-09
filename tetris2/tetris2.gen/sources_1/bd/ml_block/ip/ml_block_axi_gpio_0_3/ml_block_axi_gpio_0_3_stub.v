@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Wed Mar 26 23:26:42 2025
-// Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/johna/ece-385/lab_6_2/lab_6_2.gen/sources_1/bd/ml_block/ip/ml_block_axi_gpio_0_3/ml_block_axi_gpio_0_3_stub.v
+// Date        : Fri May  9 05:55:51 2025
+// Host        : johnathant running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top ml_block_axi_gpio_0_3 -prefix
+//               ml_block_axi_gpio_0_3_ ml_block_axi_gpio_0_3_stub.v
 // Design      : ml_block_axi_gpio_0_3
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1

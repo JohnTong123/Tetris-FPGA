@@ -1,8 +1,8 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Sat May  3 07:07:38 2025
--- Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
+-- Date        : Fri May  9 05:55:19 2025
+-- Host        : johnathant running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl
 -- Design      : clk_wiz_0

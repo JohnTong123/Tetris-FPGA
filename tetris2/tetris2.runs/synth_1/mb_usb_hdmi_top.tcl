@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -85,7 +82,10 @@ set_property parent.project_path C:/Users/johna/Tetris-FPGA/tetris2/tetris2.xpr 
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths c:/Users/johna/ece-385/lab_6_2/RD_hdmi_ip2020 [current_project]
+set_property ip_repo_paths {
+  c:/Users/johna/ece-385/lab_6_2/RD_hdmi_ip2020
+  c:/Users/johna/Downloads/hdmi_tx_1.0
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/johna/Tetris-FPGA/tetris2/tetris2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

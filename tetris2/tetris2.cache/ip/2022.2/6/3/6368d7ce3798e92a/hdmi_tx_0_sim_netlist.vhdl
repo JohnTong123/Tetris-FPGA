@@ -1,8 +1,8 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Sat May  3 07:07:42 2025
--- Host        : LAPTOP-0QM9QC02 running 64-bit major release  (build 9200)
+-- Date        : Fri May  9 05:56:33 2025
+-- Host        : johnathant running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ hdmi_tx_0_sim_netlist.vhdl
 -- Design      : hdmi_tx_0
@@ -6717,8 +6717,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "hdmi_tx_0,hdmi_tx_v1_0,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "yes";
-  attribute IP_DEFINITION_SOURCE : string;
-  attribute IP_DEFINITION_SOURCE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "package_project";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "hdmi_tx_v1_0,Vivado 2022.2";
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;

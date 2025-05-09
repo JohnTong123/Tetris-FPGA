@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Tue Mar 11 22:10:47 2025
+-- Date        : Fri May  9 05:56:43 2025
 -- Host        : johnathant running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/johna/385/lab_6_1/lab_6_1.gen/sources_1/bd/ml_block/ip/ml_block_mdm_1_0/ml_block_mdm_1_0_stub.vhdl
+--               c:/Users/johna/Tetris-FPGA/tetris2/tetris2.gen/sources_1/bd/ml_block/ip/ml_block_mdm_1_0/ml_block_mdm_1_0_stub.vhdl
 -- Design      : ml_block_mdm_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1

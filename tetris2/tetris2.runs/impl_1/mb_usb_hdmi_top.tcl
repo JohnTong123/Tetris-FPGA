@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -125,7 +124,6 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
   open_checkpoint mb_usb_hdmi_top_routed.dcp
   set_property webtalk.parent_dir C:/Users/johna/Tetris-FPGA/tetris2/tetris2.cache/wt [current_project]
 set_property TOP mb_usb_hdmi_top [current_fileset]

@@ -36,7 +36,9 @@ parameter integer DATA_WIDTH = 3
 //    output logic [7:0] debug
     output logic [31:0] score,
     input [2:0] switches,
-    output logic drop
+    output logic drop,
+    output logic finished
+//    input start_game
     );
 
 logic progress;
@@ -161,9 +163,40 @@ logic update_board_state ;
 logic update_board_vars; 
 logic [25:0] clock_count;
 logic [25:0] cap;
+//assign cap = 6250000;
 
-assign cap = 6250000;
-
+logic update;
+always_ff @(posedge game_clk or posedge reset) // game clock
+begin
+    if (reset)
+    begin
+        cap = 6250000;
+        update = 0 ;
+    end
+    else
+    begin
+       if(update == 0)
+       begin
+            if(speed_down == 1)
+            begin
+                update = 1;
+                cap+=500000;
+            end
+            else if (speed_up == 1)
+            begin
+                update = 1;
+                cap-=500000;
+            end
+       end 
+       else
+       begin
+            if(speed_down == 0 && speed_up == 0)
+            begin
+                update = 0 ;
+            end
+       end
+    end
+end
 
 always_ff @(posedge game_clk or posedge reset) // game clock
 begin
@@ -322,7 +355,7 @@ begin
 end
 
 // updating piece
-
+assign finished = end_game;
 logic end_game;
 logic can_swap;
 always_ff @(posedge game_clk or posedge reset) // update piece
@@ -333,15 +366,15 @@ begin
         block = 0;
         rotation = 0 ;
         next_block = random_block;
-        end_game = 0;
-        can_swap = 1;
+        end_game = 1;        can_swap = 1;
     end
     else if(create_block)
     begin
+        end_game  = 1;
         can_swap = 1;
         for(int i = 0 ; i < 4; i++)
         begin
-            if(stored_coords[i] > 9 && game_states[stored_coords[i]-10] !=0)
+            if(spawn_coords[i] > 9 && game_states[spawn_coords[i]-10] !=0)
             begin
                 end_game =1 ;
             end
@@ -349,6 +382,7 @@ begin
         if (end_game)
         begin
             block = 0;
+            next_block = 0 ;
         end
         else
         begin
@@ -613,7 +647,7 @@ begin
     end
     else
     begin
-       if (keycode == 8'h1D || switches[2])
+       if (keycode == 8'h1D )
        begin
             
             if(ccw_count&(1<<11))
@@ -676,7 +710,7 @@ begin
     end
     else
     begin
-       if (keycode == 8'h06 || switches[1])
+       if (keycode == 8'h06 )
        begin
             
             if(st_count&(1<<11))
@@ -728,7 +762,7 @@ begin
     end
     else
     begin
-       if (keycode == 8'h2C || switches[0])
+       if (keycode == 8'h2C )
        begin
             
             if(sp_count&(1<<11))
@@ -789,5 +823,89 @@ begin
         end
     end
 end
+
+logic [13:0] speed_up_ct;
+logic speed_up;
+always_ff @(posedge game_clk or posedge reset) // update key
+begin
+    if (reset)
+    begin
+        speed_up_ct = 0 ;
+        speed_up = 0 ;
+    end
+    else
+    begin
+       if (keycode == 8'h0f || switches[1] )
+       begin
+            
+            if(speed_up_ct&(1<<11))
+            begin
+                if (speed_up_ct&(1<<13))
+                begin
+                    speed_up = 0 ;
+                end
+                else
+                begin
+                    
+                    speed_up_ct[13] = 1;
+                    speed_up = 1;
+                end
+            end
+            else
+            begin
+                speed_up_ct+=1;
+            end
+       end
+       else
+       begin
+            speed_up = 0 ;
+            speed_up_ct = 0 ;
+       end
+       
+    end
+end
+
+logic [13:0] speed_down_ct;
+logic speed_down;
+always_ff @(posedge game_clk or posedge reset) // update key
+begin
+    if (reset)
+    begin
+        speed_down_ct = 0 ;
+        speed_down = 0 ;
+    end
+    else
+    begin
+       if (keycode == 8'h0e  )
+       begin
+            
+            if(speed_down_ct&(1<<11))
+            begin
+                if (speed_down_ct&(1<<13))
+                begin
+                    speed_down = 0 ;
+                end
+                else
+                begin
+                    
+                    speed_down_ct[13] = 1;
+                    speed_down = 1;
+                end
+            end
+            else
+            begin
+                speed_down_ct+=1;
+            end
+       end
+       else
+       begin
+            speed_down = 0 ;
+            speed_down_ct = 0 ;
+       end
+       
+    end
+end
+
+
 
 endmodule
