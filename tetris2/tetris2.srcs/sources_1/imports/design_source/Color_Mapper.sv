@@ -34,32 +34,143 @@ module  color_mapper (
         if (finished)
             if ( ((DrawX<10'd160) && (DrawY<10'd192)&& (DrawY>10'd128)))
             begin
-               if(DrawX < 32) font_addr = 464;
-                else if(DrawX < 40) font_addr = 208;
-                else if(DrawX < 48) font_addr = 400;
-                else if(DrawX < 56) font_addr = 448;
-                else if(DrawX < 64) font_addr = 240;
-                else if(DrawX < 72) font_addr = 160;
-                
-                else if(DrawX < 80) font_addr = ((score/10000) % 10) << 4;
-                else if(DrawX < 88) font_addr = ((score/1000) % 10) << 4;
-                else if(DrawX < 96) font_addr = ((score/100) % 10) << 4;
-                else if(DrawX < 104) font_addr = ((score/10) % 10) << 4;
-                else if(DrawX < 112) font_addr = ((score) % 10) << 4;
-                else if(DrawX < 120) font_addr = 0  << 4;
-                else if(DrawX < 128) font_addr = 0 << 4;
-            
-                font_addr = font_addr + DrawY - 152;
-            
-                if (font_data[7 - (DrawX % 8)])
+                if ((DrawX >= 10'd24) && (DrawX<10'd128) && (DrawY<10'd168)&& (DrawY>10'd152))
                 begin
-                    Red = 4'h0;
-                    Green = 4'h0;
-                    Blue = 4'h0;
-                end else begin
-                    Red = 4'hf; 
-                    Green = 4'hf;
-                    Blue = 4'hf;
+                   if(DrawX < 32) font_addr = 464;
+                    else if(DrawX < 40) font_addr = 208;
+                    else if(DrawX < 48) font_addr = 400;
+                    else if(DrawX < 56) font_addr = 448;
+                    else if(DrawX < 64) font_addr = 240;
+                    else if(DrawX < 72) font_addr = 160;
+                    
+                    else if(DrawX < 80) font_addr = ((score/10000) % 10) << 4;
+                    else if(DrawX < 88) font_addr = ((score/1000) % 10) << 4;
+                    else if(DrawX < 96) font_addr = ((score/100) % 10) << 4;
+                    else if(DrawX < 104) font_addr = ((score/10) % 10) << 4;
+                    else if(DrawX < 112) font_addr = ((score) % 10) << 4;
+                    else if(DrawX < 120) font_addr = 0  << 4;
+                    else if(DrawX < 128) font_addr = 0 << 4;
+                
+                    font_addr = font_addr + DrawY - 152;
+                
+                    if (font_data[7 - (DrawX % 8)])
+                    begin
+                        Red = 4'h0;
+                        Green = 4'h0;
+                        Blue = 4'h0;
+                    end else begin
+                        case (state[2:0] )
+                         3'b000:
+                            begin
+                            Red = 4'h0;
+                            Green = 4'h0;
+                            Blue = 4'h0;
+                            end
+                          3'b001:
+                            begin
+                            Red = 4'h5;
+                            Green = 4'hf;
+                            Blue = 4'hf;
+                            end
+                          3'b010:
+                            begin
+                            Red = 4'h0;
+                            Green = 4'h0;
+                            Blue = 4'hf;
+                            end
+                          3'b011:
+                            begin
+                            Red = 4'hf;
+                            Green = 4'h5;
+                            Blue = 4'h0;
+                            end
+                          3'b100:
+                            begin
+                            Red = 4'hf;
+                            Green = 4'hf;
+                            Blue = 4'h5;
+                            end
+                          3'b101:
+                            begin
+                            Red = 4'h0;
+                            Green = 4'hf;
+                            Blue = 4'h0;
+                            end
+                          3'b110:
+                            begin
+                            Red = 4'h5;
+                            Green = 4'h0;
+                            Blue = 4'h5;
+                            end
+                          3'b111:
+                            begin
+                            Red = 4'hf;
+                            Green = 4'h0;
+                            Blue = 4'h0;
+                            end
+            
+                          endcase
+                          Red = (4'h8 >> 1) + (Red >> 1); // alpha
+                          Green = (4'h8 >> 1) + (Green >> 1); 
+                          Blue = (4'h8 >> 1) + (Blue >> 1);
+                    end
+                end
+                else
+                begin
+                    case (state[2:0] )
+                     3'b000:
+                        begin
+                        Red = 4'h0;
+                        Green = 4'h0;
+                        Blue = 4'h0;
+                        end
+                      3'b001:
+                        begin
+                        Red = 4'h5;
+                        Green = 4'hf;
+                        Blue = 4'hf;
+                        end
+                      3'b010:
+                        begin
+                        Red = 4'h0;
+                        Green = 4'h0;
+                        Blue = 4'hf;
+                        end
+                      3'b011:
+                        begin
+                        Red = 4'hf;
+                        Green = 4'h5;
+                        Blue = 4'h0;
+                        end
+                      3'b100:
+                        begin
+                        Red = 4'hf;
+                        Green = 4'hf;
+                        Blue = 4'h5;
+                        end
+                      3'b101:
+                        begin
+                        Red = 4'h0;
+                        Green = 4'hf;
+                        Blue = 4'h0;
+                        end
+                      3'b110:
+                        begin
+                        Red = 4'h5;
+                        Green = 4'h0;
+                        Blue = 4'h5;
+                        end
+                      3'b111:
+                        begin
+                        Red = 4'hf;
+                        Green = 4'h0;
+                        Blue = 4'h0;
+                        end
+        
+                      endcase
+                      Red = (4'h8 >> 1) + (Red >> 1); // alpha
+                      Green = (4'h8 >> 1) + (Green >> 1); 
+                      Blue = (4'h8 >> 1) + (Blue >> 1);
                 end
             end
             else if ((DrawX<10'd160) && (DrawY<10'd320))

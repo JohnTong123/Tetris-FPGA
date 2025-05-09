@@ -23,10 +23,10 @@
 module pwm (
     input  logic       clk,
     input  logic       rst,
-    input  logic [7:0] value,
+    input  logic [11:0] value,
     output logic       pwm_out
 );
-    logic [7:0] counter;
+    logic [11:0] counter;
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst)

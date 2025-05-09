@@ -9,7 +9,7 @@
 //    For use with ECE 385 USB + HDMI                                    --
 //    University of Illinois ECE Department                              --
 //-------------------------------------------------------------------------
-
+`timescale 1ns / 1ps
 
 module mb_usb_hdmi_top # (
     parameter integer C_S_AXI_DATA_WIDTH	= 3
@@ -41,8 +41,7 @@ module mb_usb_hdmi_top # (
     output logic [3:0] hex_gridA,
     output logic [7:0] hex_segB,
     output logic [3:0] hex_gridB,
-    input logic [2:0] switches,
-    output logic audio_out
+    input logic [2:0] switches
 );
     
     logic [31:0] keycode0_gpio, keycode1_gpio;
@@ -53,15 +52,14 @@ module mb_usb_hdmi_top # (
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
     logic reset_ah;
-    
+    logic finished;
+    logic drop;
     logic [31:0] score;
     
     assign reset_ah = reset_rtl_0;
     logic [2:0] dout;
 //    logic [25:0] counter;
     logic [3:0] gs;
-    logic game_ended;
-    logic drop;
 //    logic [7:0] oof;
     game_state_machine game 
     (
@@ -77,8 +75,8 @@ module mb_usb_hdmi_top # (
 //        .debug(oof)
         .score(score),
         .switches(switches),
-        .drop(drop),
-        .finished(game_ended)
+        .finished(finished),
+        .drop(drop)
         );
 //    logic [C_S_AXI_DATA_WIDTH-1:0] game_states[200];
     
@@ -199,14 +197,15 @@ module mb_usb_hdmi_top # (
         .Red(red),
         .Green(green),
         .Blue(blue),
-        .finished(game_ended)
+        .finished(finished)
     );
     
-    top_module noise(
+    top_module sound(
     .clk(Clk),
     .rst(reset_ah),
     .btn(drop),
-    .audio_out(audio_out)
+    .audio_out_l(audio_out_l),
+    .audio_out_r(audio_out_r)
     );
     
 endmodule

@@ -38,7 +38,6 @@ parameter integer DATA_WIDTH = 3
     input [2:0] switches,
     output logic drop,
     output logic finished
-//    input start_game
     );
 
 logic progress;
@@ -47,6 +46,7 @@ logic [19:0] dels;
 logic [7:0] game_address;
 
 assign drop = spawn;
+assign finished = end_game;
 // blocks and future blocks
 logic [7:0] coords[4]; 
 logic [7:0] spawn_coords[4]; 
@@ -163,28 +163,28 @@ logic update_board_state ;
 logic update_board_vars; 
 logic [25:0] clock_count;
 logic [25:0] cap;
-//assign cap = 6250000;
 
-logic update;
+
+logic upd;
 always_ff @(posedge game_clk or posedge reset) // game clock
 begin
     if (reset)
     begin
         cap = 6250000;
-        update = 0 ;
+        upd = 0 ;
     end
     else
     begin
-       if(update == 0)
+       if(upd == 0)
        begin
             if(speed_down == 1)
             begin
-                update = 1;
+                upd = 1;
                 cap+=500000;
             end
             else if (speed_up == 1)
             begin
-                update = 1;
+                upd = 1;
                 cap-=500000;
             end
        end 
@@ -192,11 +192,12 @@ begin
        begin
             if(speed_down == 0 && speed_up == 0)
             begin
-                update = 0 ;
+                upd = 0 ;
             end
        end
     end
 end
+
 
 always_ff @(posedge game_clk or posedge reset) // game clock
 begin
@@ -209,7 +210,7 @@ begin
     else
     begin
         clock_count +=1;
-        if (clock_count == cap)
+        if (clock_count >= cap)
         begin
             clock_count = 0 ;
             update_board_vars = 1;
@@ -355,7 +356,7 @@ begin
 end
 
 // updating piece
-assign finished = end_game;
+
 logic end_game;
 logic can_swap;
 always_ff @(posedge game_clk or posedge reset) // update piece
@@ -366,11 +367,12 @@ begin
         block = 0;
         rotation = 0 ;
         next_block = random_block;
-        end_game = 1;        can_swap = 1;
+        end_game = 0;
+        can_swap = 1;
+        stored_block = 0;
     end
     else if(create_block)
     begin
-        end_game  = 1;
         can_swap = 1;
         for(int i = 0 ; i < 4; i++)
         begin
@@ -382,7 +384,6 @@ begin
         if (end_game)
         begin
             block = 0;
-            next_block = 0 ;
         end
         else
         begin
@@ -762,7 +763,7 @@ begin
     end
     else
     begin
-       if (keycode == 8'h2C )
+       if (keycode == 8'h2C || switches[0])
        begin
             
             if(sp_count&(1<<11))
@@ -823,6 +824,8 @@ begin
         end
     end
 end
+
+
 
 logic [13:0] speed_up_ct;
 logic speed_up;
@@ -905,7 +908,6 @@ begin
        
     end
 end
-
 
 
 endmodule

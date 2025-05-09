@@ -5,7 +5,7 @@ module triangle_lut (
     output logic [23:0] data
 );
 
-    // no LUT, triangle wave is goated
+    // no more sine LUT, triangle wave is goated
 
     always_comb begin
         if (addr < 24'd8388608)
