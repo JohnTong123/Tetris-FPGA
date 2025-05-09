@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri May  9 09:54:52 2025
+| Date             : Fri May  9 10:08:25 2025
 | Host             : johnathant running 64-bit major release  (build 9200)
 | Command          : report_power -file mb_usb_hdmi_top_power_routed.rpt -pb mb_usb_hdmi_top_power_summary_routed.pb -rpx mb_usb_hdmi_top_power_routed.rpx
 | Design           : mb_usb_hdmi_top
@@ -54,7 +54,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.014 |       11 |       --- |             --- |
 | Slice Logic              |     0.030 |    38270 |       --- |             --- |
-|   LUT as Logic           |     0.027 |    23907 |     32600 |           73.33 |
+|   LUT as Logic           |     0.027 |    23912 |     32600 |           73.35 |
 |   LUT as Distributed RAM |    <0.001 |      172 |      9600 |            1.79 |
 |   CARRY4                 |    <0.001 |      685 |      8150 |            8.40 |
 |   Register               |    <0.001 |     3618 |     65200 |            5.55 |
@@ -62,7 +62,7 @@ Table of Contents
 |   LUT as Shift Register  |    <0.001 |      112 |      9600 |            1.17 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |      799 |       --- |             --- |
-| Signals                  |     0.032 |    26400 |       --- |             --- |
+| Signals                  |     0.033 |    26388 |       --- |             --- |
 | Block RAM                |    <0.001 |        8 |        75 |           10.67 |
 | MMCM                     |     0.212 |        2 |         5 |           40.00 |
 | DSPs                     |     0.002 |        4 |       120 |            3.33 |
@@ -135,9 +135,9 @@ Table of Contents
 | clk_out1_clk_wiz_0                                         | clk_wiz/inst/clk_out1_clk_wiz_0                         |            40.0 |
 | clk_out1_ml_block_clk_wiz_1_0                              | mb_block_i/clk_wiz_1/inst/clk_out1_ml_block_clk_wiz_1_0 |            10.0 |
 | clk_out2_clk_wiz_0                                         | clk_wiz/inst/clk_out2_clk_wiz_0                         |             8.0 |
-| clk_wiz/inst/clk_in1                                       | Clk_IBUF_BUFG                                           |            10.0 |
 | clkfbout_clk_wiz_0                                         | clk_wiz/inst/clkfbout_clk_wiz_0                         |            10.0 |
 | clkfbout_ml_block_clk_wiz_1_0                              | mb_block_i/clk_wiz_1/inst/clkfbout_ml_block_clk_wiz_1_0 |            10.0 |
+| mb_block_i/clk_wiz_1/inst/clk_in1                          | Clk_IBUF_BUFG                                           |            10.0 |
 | mb_block_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | mb_block_i/mdm_1/U0/Use_E2.BSCAN_I/DRCK                 |            33.3 |
 | mb_block_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | mb_block_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0         |            33.3 |
 +------------------------------------------------------------+---------------------------------------------------------+-----------------+

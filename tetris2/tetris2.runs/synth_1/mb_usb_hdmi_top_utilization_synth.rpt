@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri May  9 09:52:08 2025
+| Date         : Fri May  9 10:05:32 2025
 | Host         : johnathant running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
 | Design       : mb_usb_hdmi_top
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+-------+-------+------------+-----------+-------+
 |        Site Type        |  Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+-------+-------+------------+-----------+-------+
-| Slice LUTs*             | 21946 |     0 |          0 |     32600 | 67.32 |
-|   LUT as Logic          | 21946 |     0 |          0 |     32600 | 67.32 |
+| Slice LUTs*             | 21955 |     0 |          0 |     32600 | 67.35 |
+|   LUT as Logic          | 21955 |     0 |          0 |     32600 | 67.35 |
 |   LUT as Memory         |     0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         |  1089 |     0 |          0 |     65200 |  1.67 |
 |   Register as Flip Flop |  1076 |     0 |          0 |     65200 |  1.65 |
@@ -150,10 +150,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+-------+---------------------+
 | LUT6     | 13326 |                 LUT |
 | LUT5     |  5036 |                 LUT |
-| LUT3     |  4005 |                 LUT |
+| LUT3     |  4010 |                 LUT |
 | MUXF7    |  3062 |               MuxFx |
 | LUT4     |  1648 |                 LUT |
-| LUT2     |  1514 |                 LUT |
+| LUT2     |  1509 |                 LUT |
 | MUXF8    |  1305 |               MuxFx |
 | FDCE     |  1039 |        Flop & Latch |
 | CARRY4   |   609 |          CarryLogic |

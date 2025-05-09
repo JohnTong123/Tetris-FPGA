@@ -208,7 +208,7 @@ module mb_usb_hdmi_top # (
     top_module sound(
     .clk(Clk),
     .rst(reset_ah),
-    .btn(drop),
+    .btn(drop&(starter==0)),
     .audio_out_l(audio_out_l),
     .audio_out_r(audio_out_r)
     );
