@@ -41,7 +41,9 @@ module mb_usb_hdmi_top # (
     output logic [3:0] hex_gridA,
     output logic [7:0] hex_segB,
     output logic [3:0] hex_gridB,
-    input logic [2:0] switches
+    input logic [2:0] switches,
+    output logic audio_out_r,
+    output logic audio_out_l
 );
     
     logic [31:0] keycode0_gpio, keycode1_gpio;
