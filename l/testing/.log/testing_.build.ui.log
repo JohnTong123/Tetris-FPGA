@@ -1,6 +1,6 @@
-2025-05-09T01:27:57.15932300255-01:27:57 **** Incremental Build of project testing ****
-000-buildplatform.bat 49892 testing no_domain_build 
-000-XSDB Server Channel: tcfchan#3
+2025-05-09T20:03:56.108716100255-20:03:56 **** Build of project testing ****
+000-buildplatform.bat 51508 testing  
+000-XSDB Server Channel: tcfchan#1
 000-C:/Xilinx/Vitis/2022.2/gnu/microblaze/nt
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
@@ -145,5 +145,5 @@
 000-'Finished building libraries'
 000-
 00255-
-01:28:09 Build Finished (took 12s.170ms)
+20:04:10 Build Finished (took 14s.280ms)
 

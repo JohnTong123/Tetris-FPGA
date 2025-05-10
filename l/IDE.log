@@ -844,3 +844,16 @@ con
 ----------------End of Script----------------
 
 01:29:12 INFO  : Launch script is exported to file 'C:\Users\johna\Tetris-FPGA\l\asd_system\_ide\scripts\debugger_asdf-default.tcl'
+19:55:10 INFO  : Disconnected from the channel tcfchan#1.
+20:03:27 DEBUG : Logs will be stored at 'C:/Users/johna/Tetris-FPGA/l/IDE.log'.
+20:03:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\johna\Tetris-FPGA\l\temp_xsdb_launch_script.tcl
+20:03:32 INFO  : XSCT server has started successfully.
+20:03:32 INFO  : Successfully done setting XSCT server connection channel  
+20:03:32 INFO  : plnx-install-location is set to ''
+20:03:32 INFO  : Successfully done setting workspace for the tool. 
+20:03:33 INFO  : Platform repository initialization has completed.
+20:03:34 INFO  : Registering command handlers for Vitis TCF services
+20:03:34 INFO  : Successfully done query RDI_DATADIR 
+20:03:47 INFO  : Hardware specification for platform project 'testing' is updated.
+20:04:10 INFO  : Result from executing command 'getProjects': testing;testingthing
+20:04:10 INFO  : Result from executing command 'getPlatforms': testingthing|C:/Users/johna/Tetris-FPGA/l/testingthing/export/testingthing/testingthing.xpfm;testing|C:/Users/johna/Tetris-FPGA/l/testing/export/testing/testing.xpfm

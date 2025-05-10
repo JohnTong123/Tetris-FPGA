@@ -23914,3 +23914,81 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1: Launch
 
 !ENTRY com.xilinx.sdk.utils 1 0 2025-05-09 01:29:12.195
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 19:55:10.575
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-101
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 19:55:10.685
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-101
+!SESSION 2025-05-09 20:03:17.966 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-05-09 20:03:25.369
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-09 20:03:30.281
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-09 20:03:30.282
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-09 20:03:30.282
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.234
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.234
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.250
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.251
+!MESSAGE XSCT Command: [setws C:/Users/johna/Tetris-FPGA/l], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.753
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:32.755
+!MESSAGE XSCT command with result: [setws C:/Users/johna/Tetris-FPGA/l], Result: [null, ]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:33.109
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:34.437
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:34.439
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:34.441
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:39.495
+!MESSAGE XSCT Command: [platform read {C:/Users/johna/Tetris-FPGA/l/testing/platform.spr}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:39.785
+!MESSAGE XSCT command with result: [platform read {C:/Users/johna/Tetris-FPGA/l/testing/platform.spr}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:39.817
+!MESSAGE XSCT Command: [platform active {testing}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:39.818
+!MESSAGE XSCT command with result: [platform active {testing}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-09 20:03:42.376
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-09 20:03:42.376
+!MESSAGE Preference loaded using local preference: C:\Users\johna\Tetris-FPGA\tetris2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:46.727
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/johna/Tetris-FPGA/tetris2/mb_usb_hdmi_top.xsa}], Thread: Worker-0: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 20:03:47.146
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/johna/Tetris-FPGA/tetris2/mb_usb_hdmi_top.xsa}], Result: [null, ]. Thread: Worker-0: Updating hardware platform

@@ -51,3 +51,6 @@ platform config -updatehw {C:/Users/johna/Tetris-FPGA/tetris2/mb_usb_hdmi_top.xs
 platform generate -domains standalone_microblaze_0 
 platform config -updatehw {C:/Users/johna/Tetris-FPGA/tetris2/mb_usb_hdmi_top.xsa}
 platform generate -domains 
+platform active {testing}
+platform config -updatehw {C:/Users/johna/Tetris-FPGA/tetris2/mb_usb_hdmi_top.xsa}
+platform generate
